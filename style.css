@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 74px;
+}
+
+#orange-triangle {
+  position: absolute;
+  top: 0;
+}
+
+#red-diamond {
+  position: absolute;
+  top: 0;
+  left: 37px;
+}
+
+nav {
+  width: 20px;
+  height: 14px;
+  margin-right: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.line {
+  border: 2px solid #c4c4c4;
+}
