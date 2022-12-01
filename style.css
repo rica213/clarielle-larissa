@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: Poppins;
+  font-family: Poppins, cursive;
 }
 
 header {
@@ -34,6 +34,7 @@ nav {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .line {
   border: 2px solid #c4c4c4;
 }
@@ -48,9 +49,9 @@ nav {
 }
 
 #owner {
-  font-family: Playfair Display;
+  font-family: "Playfair Display", serif;
   font-size: 50px;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 50px;
   letter-spacing: 0em;
   text-align: left;
@@ -60,7 +61,7 @@ nav {
 #intro {
   margin-right: 16px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 21px;
   letter-spacing: -0.01em;
   text-align: left;
@@ -74,9 +75,9 @@ nav {
   letter-spacing: 0em;
   text-align: center;
   padding: 12px 42px;
-  color: #ffffff;
+  color: #fff;
   background: #1a2236;
   margin-right: 16px;
-  margin-top:20px;
-  border:1px solid #E45865;
+  margin-top: 20px;
+  border: 1px solid #e45865;
 }
