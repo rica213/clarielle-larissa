@@ -18,12 +18,18 @@ header {
 #orange-triangle {
   position: absolute;
   top: 0;
+  background-image: url("img/mobile/Orange-Triangle.png");
+  width: 74px;
+  height: 74px;
 }
 
 #red-diamond {
   position: absolute;
   top: 0;
   left: 37px;
+  background-image: url("img/mobile/Red-Diamond.png");
+  width: 74px;
+  height: 74px;
 }
 
 nav {
@@ -36,7 +42,7 @@ nav {
 }
 
 .line {
-  border: 2px solid #c4c4c4;
+  border: 1px solid #c4c4c4;
 }
 
 .headline {
@@ -45,10 +51,9 @@ nav {
   justify-content: space-between;
   margin-left: 16px;
   margin-top: 30px;
-  height: 330px;
 }
 
-#owner {
+.title {
   font-family: "Playfair Display", serif;
   font-size: 50px;
   font-weight: normal;
@@ -58,6 +63,7 @@ nav {
 }
 
 #intro {
+  margin-top: 20px;
   margin-right: 16px;
   font-size: 14px;
   font-weight: normal;
@@ -90,4 +96,11 @@ nav {
 #collaboration:active {
   cursor: pointer;
   border: 2px solid #1a2236;
+}
+
+#separator {
+  background-image: url(img/mobile/separator.svg);
+  height: 160px;
+  margin-top: 20px;
+  margin-right: 16px;
 }
