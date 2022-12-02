@@ -53,11 +53,17 @@
     <li><a href="#">CSS</a></li>
   </ul>
 </details>
+<details>
+  <summary>Server</summary>
+</details>
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-> .
+  <ul>
+    <li>Introduction Section</li>
+    <li>Responsive Design</li>
+  </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -72,9 +78,14 @@
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> >>>>>>
-
+## Setup <a name="setup"></a>
+> Clone the repository to your local machine.
+## Prerequisites <a name="prerequisites"></a>
+> You need an installed browser to run this project.
+## Install <a name="install"></a>
+## Usage <a name="usage"></a>
+## Run tests <a name="run-tests"></a>
+## Deployment <a name="deployment"></a>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
@@ -95,7 +106,11 @@
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> >>>>>>>>>>>>>>>>>>>>>
+ <ul>
+    <li>Social Media Accounts</li>
+    <li>Personal Projects</li>
+    <li>Testimonials</li>
+  </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
