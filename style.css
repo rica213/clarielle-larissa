@@ -13,6 +13,7 @@
   --mediumElectricBlue: #1c528a;
   --raspberryPink: #e2505c;
   --maximumYellowRed: #febf52;
+  --ghostWhite: #f9f9fa;
 }
 
 body {
@@ -323,10 +324,16 @@ nav {
   grid-template-columns: 320px;
   grid-template-rows: auto;
   margin: 0 16px;
+  background-color: var(--ghostWhite);
+  background-image: url(img/mobile/top_left.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  padding-top: 70px;
 }
 
 #get-started .section-desc {
   margin-bottom: 20px;
+  padding-right: 10px;
 }
 
 form {
