@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: Poppins, cursive;
+  font-family: Poppins, sans-serif;
 }
 
 header {
@@ -104,3 +104,114 @@ nav {
   margin-top: 20px;
   margin-right: 16px;
 }
+
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  font-weight: normal;
+  text-align: left;
+  color: #1a2236;
+  margin-left: 16px;
+  margin-top: 40px;
+}
+
+#project-container {
+  display: grid;
+  grid-template-columns: 320px;
+  grid-template-rows: repeat(6, 342px);
+  width: 320px;
+  background: #1a2236;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-preview {
+  height: 186px;
+}
+
+.one {
+  background-image: url(img/mobile/one.png);
+}
+.two {
+  background-image: url(img/mobile/two.png);
+}
+.three {
+  background-image: url(img/mobile/three.png);
+}
+.four {
+  background-image: url(img/mobile/four.png);
+}
+.five {
+  background-image: url(img/mobile/five.png);
+}
+.six {
+  background-image: url(img/mobile/six.png);
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-left: 20px;
+  height: 156px;
+}
+
+.project-name {
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 16px;
+  margin-top: 15px;
+}
+
+.project-technologies {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: -20px;
+}
+
+.project-technologies li {
+  list-style: none;
+  margin-top: -16px;
+  margin-right: 8px;
+  padding: 6px 10px;
+  background: #98dede;
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 8px;
+  text-align: left;
+  color: #000;
+}
+
+.project-technologies li:hover {
+  font-size: 11px;
+}
+
+.project-visit {
+  border: 1px solid #fff;
+  padding: 10px;
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.project-visit img {
+  margin-left: 10px;
+  margin-bottom: -5px;
+}
+
+/* End CSS Work Section */
