@@ -316,24 +316,26 @@ nav {
 }
 /* End CSS About Section */
 
- /* Start CSS Get started */
+/* Start CSS Get started */
 
-#get-started{
-  display:grid;
+#get-started {
+  display: grid;
   grid-template-columns: 320px;
   grid-template-rows: auto;
   margin: 0 16px;
 }
 
-#get-started .section-desc{
-  margin-bottom: 20px
+#get-started .section-desc {
+  margin-bottom: 20px;
 }
 
-form{
-  width: 290px
+form {
+  width: 290px;
 }
 
-#name, #email, #message{
+#name,
+#email,
+#message {
   width: 100%;
   margin-bottom: 8px;
   padding: 16px;
@@ -341,9 +343,40 @@ form{
   font-weight: 400;
   line-height: 21px;
   text-align: left;
+  border-radius: 5px;
 }
 
-#get-started .connect{
+#get-started .connect {
   width: 100%;
 }
- /* End CSS Get started */
+/* End CSS Get started */
+
+/* Start CSS Social Media */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--harmonies);
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+
+.resume {
+  display: flex;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: var(--pastelTurquoise);
+  width: 50%;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* End CSS Social Media */
