@@ -248,6 +248,7 @@ nav {
   grid-template-columns: 320px;
   grid-template-rows: 290px auto;
   row-gap: 40px;
+  margin-bottom: 40px;
 }
 
 .about-desc-container {
@@ -288,7 +289,7 @@ nav {
 
 #skills-card_skill {
   background: var(--maximumYellowRed);
-  background-image: url(img/mobile/bulb.svg);
+  background-image: url(img/mobile/ic_skills.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
 }
@@ -314,3 +315,35 @@ nav {
   text-align: left;
 }
 /* End CSS About Section */
+
+ /* Start CSS Get started */
+
+#get-started{
+  display:grid;
+  grid-template-columns: 320px;
+  grid-template-rows: auto;
+  margin: 0 16px;
+}
+
+#get-started .section-desc{
+  margin-bottom: 20px
+}
+
+form{
+  width: 290px
+}
+
+#name, #email, #message{
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+
+#get-started .connect{
+  width: 100%;
+}
+ /* End CSS Get started */
