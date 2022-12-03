@@ -3,6 +3,18 @@
   margin: 0;
 }
 
+:root {
+  --white: #fff;
+  --gray77: #c4c4c4;
+  --harmonies: #1a2236;
+  --darkerBlue: #172b4d;
+  --pastelTurquoise: #98dede;
+  --black: #000;
+  --mediumElectricBlue: #1c528a;
+  --raspberryPink: #e2505c;
+  --maximumYellowRed: #febf52;
+}
+
 body {
   font-family: Poppins, sans-serif;
 }
@@ -12,7 +24,7 @@ body {
   font-size: 50px;
   font-weight: normal;
   text-align: left;
-  color: #1a2236;
+  color: var(--harmonies);
 }
 
 .section-desc {
@@ -23,7 +35,7 @@ body {
   line-height: 21px;
   letter-spacing: -0.01em;
   text-align: left;
-  color: #1a2236;
+  color: var(--harmonies);
 }
 
 .connect {
@@ -32,23 +44,23 @@ body {
   line-height: 24px;
   text-align: center;
   padding: 12px 42px;
-  color: #fff;
-  background: #1a2236;
+  color: var(--white);
+  background: var(--harmonies);
   margin-right: 16px;
   margin-top: 20px;
   text-decoration: none;
 }
 
 .connect:hover {
-  color: #1a2236;
-  background-color: #fff;
+  color: var(--harmonies);
+  background-color: var(--white);
   cursor: pointer;
-  border: 1px solid #1a2236;
+  border: 1px solid var(--harmonies);
 }
 
 .connect:active {
   cursor: pointer;
-  border: 2px solid #1a2236;
+  border: 2px solid var(--harmonies);
 }
 
 /* Start CSS Header */
@@ -88,7 +100,7 @@ nav {
 }
 
 .line {
-  border: 1px solid #c4c4c4;
+  border: 1px solid var(--gray77);
 }
 
 /* End CSS Header */
@@ -128,8 +140,8 @@ nav {
   grid-template-columns: 320px;
   grid-template-rows: repeat(6, 342px);
   width: 320px;
-  background: #1a2236;
-  color: #fff;
+  background: var(--harmonies);
+  color: var(--white);
   margin-top: 20px;
 }
 
@@ -196,13 +208,13 @@ nav {
   margin-top: -16px;
   margin-right: 8px;
   padding: 6px 10px;
-  background: #98dede;
+  background: var(--pastelTurquoise);
   font-family: Poppins;
   font-size: 10px;
   font-weight: 300;
   line-height: 8px;
   text-align: left;
-  color: #000;
+  color: var(--black);
 }
 
 .project-technologies li:hover {
@@ -210,7 +222,7 @@ nav {
 }
 
 .project-visit {
-  border: 1px solid #fff;
+  border: 1px solid var(--white);
   padding: 10px;
   text-decoration: none;
   font-family: Poppins;
@@ -218,7 +230,7 @@ nav {
   font-weight: 500;
   line-height: 24px;
   text-align: center;
-  color: #fff;
+  color: var(--white);
   margin-bottom: 20px;
 }
 
@@ -257,19 +269,28 @@ nav {
   grid-template-columns: 289px;
   grid-template-rows: repeat(3, 289px);
   row-gap: 16px;
-  color: #fff;
+  color: var(--white);
 }
 
 #skills-card_language {
-  background: #1c528a;
+  background: var(--mediumElectricBlue);
+  background-image: url(img/mobile/sharp.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 #skills-card_framework {
-  background: #e2505c;
+  background: var(--raspberryPink);
+  background-image: url(img/mobile/diamond.svg), url(img/mobile/Rectangle.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 #skills-card_skill {
-  background: #febf52;
+  background: var(--maximumYellowRed);
+  background-image: url(img/mobile/bulb.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 .skills-title {
