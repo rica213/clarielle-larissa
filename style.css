@@ -210,12 +210,20 @@ nav {
   margin-right: 8px;
   padding: 6px 10px;
   background: var(--pastelTurquoise);
-  font-family: Poppins;
+
   font-size: 10px;
   font-weight: 300;
   line-height: 8px;
   text-align: left;
   color: var(--black);
+}
+
+.skills-list li {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: -0.0525em;
+  text-align: left;
 }
 
 .project-technologies li:hover {
@@ -226,7 +234,7 @@ nav {
   border: 1px solid var(--white);
   padding: 10px;
   text-decoration: none;
-  font-family: Poppins;
+  
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -266,7 +274,7 @@ nav {
 }
 
 .skills-container {
-  margin: 0px 16px;
+  margin: 0 16px;
   display: grid;
   grid-template-columns: 289px;
   grid-template-rows: repeat(3, 289px);
@@ -308,13 +316,6 @@ nav {
   padding-left: 67px;
 }
 
-.skills-list li {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 27px;
-  letter-spacing: -0.0525em;
-  text-align: left;
-}
 /* End CSS About Section */
 
 /* Start CSS Get started */
@@ -356,6 +357,7 @@ form {
 #get-started .connect {
   width: 100%;
 }
+
 /* End CSS Get started */
 
 /* Start CSS Social Media */
@@ -370,7 +372,7 @@ form {
 
 .resume {
   display: flex;
-  font-family: Poppins;
+  
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
