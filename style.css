@@ -317,7 +317,6 @@ nav {
   background-image: url(img/mobile/top_left.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
-  padding-top: 70px;
   padding: 70px 16px;
   width: 100%;
 }
@@ -328,7 +327,7 @@ nav {
 }
 
 form {
-  width: 91%;
+  width: 100%;
 }
 
 #name,
@@ -349,3 +348,32 @@ form {
 }
 
 /* End CSS Get started */
+
+/* Start CSS Contact */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--harmonies);
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.resume {
+  display: flex;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: var(--pastelTurquoise);
+  width: 50%;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* End CSS Contact */
