@@ -231,7 +231,7 @@ nav {
 
 #about {
   display: grid;
-  grid-template-columns: 320px;
+  grid-template-columns: 100%;
   grid-template-rows: 290px auto;
   row-gap: 40px;
   margin-bottom: 40px;
@@ -253,7 +253,7 @@ nav {
 .skills-container {
   margin: 0 16px;
   display: grid;
-  grid-template-columns: 289px;
+  grid-template-columns: 100%;
   grid-template-rows: repeat(3, 289px);
   row-gap: 16px;
   color: var(--white);
