@@ -52,14 +52,14 @@ main {
   text-align: center;
   padding: 12px 42px;
   color: var(--white);
-  background: #1a2236;
+  background: var(--harmonies);
   margin-right: 16px;
   margin-top: 20px;
   text-decoration: none;
 }
 
 .connect:hover {
-  color: #1a2236;
+  color: var(--harmonies);
   background-color: var(--white);
   cursor: pointer;
   border: 1px solid var(--harmonies);
@@ -127,11 +127,11 @@ nav {
   margin-top: 40px;
 }
 
-#project-container {
+.project-container {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(6, 342px);
-  width: 320px;
+  width: 100%;
   background: var(--harmonies);
   color: var(--white);
   margin-top: 20px;
@@ -144,7 +144,7 @@ nav {
 }
 
 .project-preview {
-  height: 186px;
+  height: 55%;
 }
 
 .one {
@@ -206,10 +206,6 @@ nav {
   line-height: 8px;
   text-align: left;
   color: var(--black);
-}
-
-.project-technologies li:hover {
-  font-size: 11px;
 }
 
 .project-visit {
