@@ -230,3 +230,79 @@ nav {
 }
 
 /* End CSS Work Section */
+
+/* Start CSS About Section */
+
+#about {
+  display: grid;
+  grid-template-columns: 320px;
+  grid-template-rows: 290px auto;
+  row-gap: 40px;
+  margin-bottom: 40px;
+}
+
+.about-desc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 16px;
+  margin-top: 40px;
+}
+
+#about .connect img {
+  margin-left: 20px;
+  margin-bottom: -5px;
+}
+
+.skills-container {
+  margin: 0 16px;
+  display: grid;
+  grid-template-columns: 289px;
+  grid-template-rows: repeat(3, 289px);
+  row-gap: 16px;
+  color: var(--white);
+}
+
+#skills-card_language {
+  background: var(--mediumElectricBlue);
+  background-image: url(img/mobile/sharp.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+#skills-card_framework {
+  background: var(--raspberryPink);
+  background-image: url(img/mobile/ic_framework.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+#skills-card_skill {
+  background: var(--maximumYellowRed);
+  background-image: url(img/mobile/ic_skills.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.skills-title {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 30px;
+  padding-left: 50px;
+  padding-top: 50px;
+  margin-bottom: 21px;
+}
+
+.skills-list {
+  padding-left: 67px;
+}
+
+.skills-list li {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: -0.0525em;
+  text-align: left;
+}
+
+/* End CSS About Section */
