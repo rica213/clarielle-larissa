@@ -5,31 +5,68 @@
 
 body {
   font-family: Poppins, cursive;
+  min-height: 100vh;
 }
+
+main {
+  width: 320px;
+}
+
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  font-weight: normal;
+  line-height: 50px;
+  text-align: left;
+  color: #1a2236;
+}
+
+.section-desc {
+  margin-top: 20px;
+  margin-right: 16px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #1a2236;
+}
+
+.connect {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  padding: 12px 42px;
+  color: #fff;
+  background: #1a2236;
+  margin-right: 16px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.connect:hover {
+  color: #1a2236;
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid #1a2236;
+}
+
+.connect:active {
+  cursor: pointer;
+  border: 2px solid #1a2236;
+}
+
+/* Start CSS Header */
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  position: relative;
   height: 74px;
-}
-
-#orange-triangle {
-  position: absolute;
-  top: 0;
-  background-image: url("img/mobile/Orange-Triangle.png");
-  width: 74px;
-  height: 74px;
-}
-
-#red-diamond {
-  position: absolute;
-  top: 0;
-  left: 37px;
-  background-image: url("img/mobile/Red-Diamond.png");
-  width: 74px;
-  height: 74px;
+  width: 320px;
+  background-image: url(img/mobile/top_left.svg);
+  background-repeat: no-repeat;
 }
 
 nav {
@@ -45,57 +82,16 @@ nav {
   border: 1px solid #c4c4c4;
 }
 
-.headline {
+/* End CSS Header */
+
+/* Start CSS Headline */
+
+#headline {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-left: 16px;
   margin-top: 30px;
-}
-
-.title {
-  font-family: "Playfair Display", serif;
-  font-size: 50px;
-  font-weight: normal;
-  line-height: 50px;
-  text-align: left;
-  color: #1a2236;
-}
-
-#intro {
-  margin-top: 20px;
-  margin-right: 16px;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 21px;
-  letter-spacing: -0.01em;
-  text-align: left;
-  color: #1a2236;
-}
-
-#collaboration {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  text-align: center;
-  padding: 12px 42px;
-  color: #fff;
-  background: #1a2236;
-  margin-right: 16px;
-  margin-top: 20px;
-  text-decoration: none;
-}
-
-#collaboration:hover {
-  color: #1a2236;
-  background-color: #fff;
-  cursor: pointer;
-  border: 1px solid #1a2236;
-}
-
-#collaboration:active {
-  cursor: pointer;
-  border: 2px solid #1a2236;
 }
 
 #separator {
@@ -104,3 +100,5 @@ nav {
   margin-top: 20px;
   margin-right: 16px;
 }
+
+/* End CSS Headline */
