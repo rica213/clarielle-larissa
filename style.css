@@ -3,6 +3,19 @@
   margin: 0;
 }
 
+:root {
+  --white: #fff;
+  --gray77: #c4c4c4;
+  --harmonies: #1a2236;
+  --darkerBlue: #172b4d;
+  --pastelTurquoise: #98dede;
+  --black: #000;
+  --mediumElectricBlue: #1c528a;
+  --raspberryPink: #e2505c;
+  --maximumYellowRed: #febf52;
+  --ghostWhite: #f9f9fa;
+}
+
 body {
   font-family: Poppins, cursive;
   min-height: 100vh;
@@ -18,7 +31,7 @@ main {
   font-weight: normal;
   line-height: 50px;
   text-align: left;
-  color: #1a2236;
+  color: var(--harmonies);
 }
 
 .section-desc {
@@ -29,7 +42,7 @@ main {
   line-height: 21px;
   letter-spacing: -0.01em;
   text-align: left;
-  color: #1a2236;
+  color: var(--harmonies);
 }
 
 .connect {
@@ -38,7 +51,7 @@ main {
   line-height: 24px;
   text-align: center;
   padding: 12px 42px;
-  color: #fff;
+  color: var(--white);
   background: #1a2236;
   margin-right: 16px;
   margin-top: 20px;
@@ -47,14 +60,14 @@ main {
 
 .connect:hover {
   color: #1a2236;
-  background-color: #fff;
+  background-color: var(--white);
   cursor: pointer;
-  border: 1px solid #1a2236;
+  border: 1px solid var(--harmonies);
 }
 
 .connect:active {
   cursor: pointer;
-  border: 2px solid #1a2236;
+  border: 2px solid var(--harmonies);
 }
 
 /* Start CSS Header */
@@ -79,7 +92,7 @@ nav {
 }
 
 .line {
-  border: 1px solid #c4c4c4;
+  border: 1px solid var(--gray77);
 }
 
 /* End CSS Header */
@@ -102,3 +115,118 @@ nav {
 }
 
 /* End CSS Headline */
+
+/* Start CSS Work Section */
+
+#project {
+  width: 100%;
+}
+
+#project .section-title {
+  margin-left: 16px;
+  margin-top: 40px;
+}
+
+#project-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(6, 342px);
+  width: 320px;
+  background: var(--harmonies);
+  color: var(--white);
+  margin-top: 20px;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-preview {
+  height: 186px;
+}
+
+.one {
+  background-image: url(img/mobile/one.png);
+}
+
+.two {
+  background-image: url(img/mobile/two.png);
+}
+
+.three {
+  background-image: url(img/mobile/three.png);
+}
+
+.four {
+  background-image: url(img/mobile/four.png);
+}
+
+.five {
+  background-image: url(img/mobile/five.png);
+}
+
+.six {
+  background-image: url(img/mobile/six.png);
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-left: 20px;
+  height: 156px;
+}
+
+.project-name {
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 16px;
+  margin-top: 15px;
+}
+
+.project-technologies {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: -20px;
+}
+
+.project-technologies li {
+  list-style: none;
+  margin-top: -16px;
+  margin-right: 8px;
+  padding: 6px 10px;
+  background: var(--pastelTurquoise);
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 8px;
+  text-align: left;
+  color: var(--black);
+}
+
+.project-technologies li:hover {
+  font-size: 11px;
+}
+
+.project-visit {
+  border: 1px solid var(--white);
+  padding: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.project-visit img {
+  margin-left: 10px;
+  margin-bottom: -5px;
+}
+
+/* End CSS Work Section */
