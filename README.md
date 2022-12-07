@@ -71,7 +71,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> This website does not have a live demo yet.
+> https://rica213.github.io/portfolio/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -136,7 +136,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> I would like to thank Microverse for their guidance.
+> I would like to thank Microverse for their guidance and all the reviewers for their time.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
