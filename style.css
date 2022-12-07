@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -17,44 +18,44 @@
 }
 
 body {
-  font-family: Poppins, cursive;
+  font-family: Poppins, sans-serif;
   min-height: 100vh;
 }
 
-main {
-  width: 320px;
+.grid {
+  display: grid;
 }
 
 .section-title {
   font-family: "Playfair Display", serif;
-  font-size: 50px;
+  font-size: 3.125em;
   font-weight: normal;
-  line-height: 50px;
+  line-height: 1em;
   text-align: left;
   color: var(--harmonies);
+  padding: 30px 16px 0 16px;
 }
 
 .section-desc {
-  margin-top: 20px;
-  margin-right: 16px;
-  font-size: 14px;
+  font-size: 0.9em;
   font-weight: normal;
-  line-height: 21px;
+  line-height: 1.5em;
   letter-spacing: -0.01em;
   text-align: left;
   color: var(--harmonies);
+  padding: 30px 16px 0 16px;
+  margin-right: 16px;
 }
 
 .connect {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1.5em;
   text-align: center;
-  padding: 12px 42px;
   color: var(--white);
   background: var(--harmonies);
-  margin-right: 16px;
-  margin-top: 20px;
+  padding: 12px 42px;
+  margin: 20px 16px;
   text-decoration: none;
 }
 
@@ -77,7 +78,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   height: 74px;
-  width: 320px;
+  width: 100%;
   background-image: url(img/mobile/top_left.svg);
   background-repeat: no-repeat;
 }
@@ -103,15 +104,20 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 16px;
-  margin-top: 30px;
 }
 
-#separator {
-  background-image: url(img/mobile/separator.svg);
+#headline .section-title,
+.section-desc {
+  padding: 30px 16px 0 16px;
+}
+
+.separator {
+  width: 100%;
   height: 160px;
   margin-top: 20px;
-  margin-right: 16px;
+  padding: 0;
+  background-image: url(img/mobile/separator.svg);
+  background-size: cover;
 }
 
 /* End CSS Headline */
@@ -120,31 +126,32 @@ nav {
 
 #project {
   width: 100%;
+  margin: 0 auto;
 }
 
 #project .section-title {
-  margin-left: 16px;
-  margin-top: 40px;
+  margin: 40px 16px 20px 16px;
 }
 
 .project-container {
-  display: grid;
-  grid-template-columns: 100%;
   grid-template-rows: repeat(6, 342px);
   width: 100%;
   background: var(--harmonies);
   color: var(--white);
-  margin-top: 20px;
+  margin: 0 auto;
 }
 
 .project-item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .project-preview {
   height: 55%;
+  background-size: cover;
 }
 
 .one {
@@ -176,14 +183,19 @@ nav {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  padding-left: 20px;
   height: 156px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.project-description * {
+  align-self: left;
 }
 
 .project-name {
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 100;
-  line-height: 16px;
+  line-height: 0.8em;
   margin-top: 15px;
 }
 
@@ -201,22 +213,22 @@ nav {
   margin-right: 8px;
   padding: 6px 10px;
   background: var(--pastelTurquoise);
-  font-size: 10px;
+  font-size: 0.625em;
   font-weight: 300;
-  line-height: 8px;
+  line-height: 0.8em;
   text-align: left;
   color: var(--black);
 }
 
 .project-visit {
   border: 1px solid var(--white);
-  padding: 10px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1.5em;
   text-align: center;
   color: var(--white);
+  padding: 10px;
   margin-bottom: 20px;
 }
 
@@ -230,9 +242,7 @@ nav {
 /* Start CSS About Section */
 
 #about {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 290px auto;
+  grid-template-rows: auto auto;
   row-gap: 40px;
   margin-bottom: 40px;
 }
@@ -241,7 +251,6 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 16px;
   margin-top: 40px;
 }
 
@@ -251,9 +260,9 @@ nav {
 }
 
 .skills-container {
-  margin: 0 16px;
-  display: grid;
-  grid-template-columns: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
   grid-template-rows: repeat(3, 289px);
   row-gap: 16px;
   color: var(--white);
@@ -281,9 +290,9 @@ nav {
 }
 
 .skills-title {
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 800;
-  line-height: 30px;
+  line-height: 1.5em;
   padding-left: 50px;
   padding-top: 50px;
   margin-bottom: 21px;
@@ -294,9 +303,9 @@ nav {
 }
 
 .skills-list li {
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 600;
-  line-height: 27px;
+  line-height: 1.5em;
   letter-spacing: -0.0525em;
   text-align: left;
 }
@@ -306,8 +315,6 @@ nav {
 /* Start CSS Get started */
 
 #get-started {
-  display: grid;
-  grid-template-columns: 100%;
   grid-template-rows: auto;
   background-color: var(--ghostWhite);
   background-image: url(img/mobile/top_left.svg);
@@ -332,15 +339,17 @@ form {
   width: 100%;
   margin-bottom: 8px;
   padding: 16px;
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 1.5em;
   text-align: left;
   border-radius: 5px;
 }
 
 #get-started .connect {
   width: 100%;
+  border-style: none;
+  margin: 0 auto;
 }
 
 /* End CSS Get started */
@@ -357,13 +366,13 @@ form {
 
 .resume {
   display: flex;
-  font-size: 20px;
+  justify-content: space-between;
+  font-size: 1.25em;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1.2em;
   text-align: left;
   color: var(--pastelTurquoise);
   width: 50%;
-  justify-content: space-between;
   margin: 20px;
 }
 
