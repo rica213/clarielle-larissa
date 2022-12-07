@@ -1,35 +1,86 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #fff;
+  --gray77: #c4c4c4;
+  --harmonies: #1a2236;
+  --darkerBlue: #172b4d;
+  --pastelTurquoise: #98dede;
+  --black: #000;
+  --mediumElectricBlue: #1c528a;
+  --raspberryPink: #e2505c;
+  --maximumYellowRed: #febf52;
+  --ghostWhite: #f9f9fa;
 }
 
 body {
-  font-family: Poppins, cursive;
+  font-family: Poppins, sans-serif;
+  min-height: 100vh;
 }
+
+.grid {
+  display: grid;
+}
+
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 3.125em;
+  font-weight: normal;
+  line-height: 1em;
+  text-align: left;
+  color: var(--harmonies);
+  padding: 30px 16px 0 16px;
+}
+
+.section-desc {
+  font-size: 0.9em;
+  font-weight: normal;
+  line-height: 1.5em;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: var(--harmonies);
+  padding: 30px 16px 0 16px;
+  margin-right: 16px;
+}
+
+.connect {
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.5em;
+  text-align: center;
+  color: var(--white);
+  background: var(--harmonies);
+  padding: 12px 42px;
+  margin: 20px 16px;
+  text-decoration: none;
+}
+
+.connect:hover {
+  color: var(--harmonies);
+  background-color: var(--white);
+  cursor: pointer;
+  border: 1px solid var(--harmonies);
+}
+
+.connect:active {
+  cursor: pointer;
+  border: 2px solid var(--harmonies);
+}
+
+/* Start CSS Header */
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  position: relative;
   height: 74px;
-}
-
-#orange-triangle {
-  position: absolute;
-  top: 0;
-  background-image: url("img/mobile/Orange-Triangle.png");
-  width: 74px;
-  height: 74px;
-}
-
-#red-diamond {
-  position: absolute;
-  top: 0;
-  left: 37px;
-  background-image: url("img/mobile/Red-Diamond.png");
-  width: 74px;
-  height: 74px;
+  width: 100%;
+  background-image: url(img/mobile/top_left.svg);
+  background-repeat: no-repeat;
 }
 
 nav {
@@ -42,65 +93,292 @@ nav {
 }
 
 .line {
-  border: 1px solid #c4c4c4;
+  border: 1px solid var(--gray77);
 }
 
-.headline {
+/* End CSS Header */
+
+/* Start CSS Headline */
+
+#headline {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 16px;
-  margin-top: 30px;
 }
 
-.title {
-  font-family: "Playfair Display", serif;
-  font-size: 50px;
-  font-weight: normal;
-  line-height: 50px;
-  text-align: left;
-  color: #1a2236;
+#headline .section-title,
+.section-desc {
+  padding: 30px 16px 0 16px;
 }
 
-#intro {
-  margin-top: 20px;
-  margin-right: 16px;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 21px;
-  letter-spacing: -0.01em;
-  text-align: left;
-  color: #1a2236;
-}
-
-#collaboration {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  text-align: center;
-  padding: 12px 42px;
-  color: #fff;
-  background: #1a2236;
-  margin-right: 16px;
-  margin-top: 20px;
-  text-decoration: none;
-}
-
-#collaboration:hover {
-  color: #1a2236;
-  background-color: #fff;
-  cursor: pointer;
-  border: 1px solid #1a2236;
-}
-
-#collaboration:active {
-  cursor: pointer;
-  border: 2px solid #1a2236;
-}
-
-#separator {
-  background-image: url(img/mobile/separator.svg);
+.separator {
+  width: 100%;
   height: 160px;
   margin-top: 20px;
-  margin-right: 16px;
+  padding: 0;
+  background-image: url(img/mobile/separator.svg);
+  background-size: cover;
 }
+
+/* End CSS Headline */
+
+/* Start CSS Work Section */
+
+#project {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#project .section-title {
+  margin: 40px 16px 20px 16px;
+}
+
+.project-container {
+  grid-template-rows: repeat(6, 342px);
+  width: 100%;
+  background: var(--harmonies);
+  color: var(--white);
+  margin: 0 auto;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.project-preview {
+  height: 55%;
+  background-size: cover;
+}
+
+.one {
+  background-image: url(img/mobile/one.png);
+}
+
+.two {
+  background-image: url(img/mobile/two.png);
+}
+
+.three {
+  background-image: url(img/mobile/three.png);
+}
+
+.four {
+  background-image: url(img/mobile/four.png);
+}
+
+.five {
+  background-image: url(img/mobile/five.png);
+}
+
+.six {
+  background-image: url(img/mobile/six.png);
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 156px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.project-description * {
+  align-self: left;
+}
+
+.project-name {
+  font-size: 1.25em;
+  font-weight: 100;
+  line-height: 0.8em;
+  margin-top: 15px;
+}
+
+.project-technologies {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: -20px;
+}
+
+.project-technologies li {
+  list-style: none;
+  margin-top: -16px;
+  margin-right: 8px;
+  padding: 6px 10px;
+  background: var(--pastelTurquoise);
+  font-size: 0.625em;
+  font-weight: 300;
+  line-height: 0.8em;
+  text-align: left;
+  color: var(--black);
+}
+
+.project-visit {
+  border: 1px solid var(--white);
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.5em;
+  text-align: center;
+  color: var(--white);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.project-visit img {
+  margin-left: 10px;
+  margin-bottom: -5px;
+}
+
+/* End CSS Work Section */
+
+/* Start CSS About Section */
+
+#about {
+  grid-template-rows: auto auto;
+  row-gap: 40px;
+  margin-bottom: 40px;
+}
+
+.about-desc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+#about .connect img {
+  margin-left: 20px;
+  margin-bottom: -5px;
+}
+
+.skills-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  grid-template-rows: repeat(3, 289px);
+  row-gap: 16px;
+  color: var(--white);
+}
+
+#skills-card_language {
+  background: var(--mediumElectricBlue);
+  background-image: url(img/mobile/sharp.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+#skills-card_framework {
+  background: var(--raspberryPink);
+  background-image: url(img/mobile/ic_framework.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+#skills-card_skill {
+  background: var(--maximumYellowRed);
+  background-image: url(img/mobile/ic_skills.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.skills-title {
+  font-size: 1.25em;
+  font-weight: 800;
+  line-height: 1.5em;
+  padding-left: 50px;
+  padding-top: 50px;
+  margin-bottom: 21px;
+}
+
+.skills-list {
+  padding-left: 67px;
+}
+
+.skills-list li {
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 1.5em;
+  letter-spacing: -0.0525em;
+  text-align: left;
+}
+
+/* End CSS About Section */
+
+/* Start CSS Get started */
+
+#get-started {
+  grid-template-rows: auto;
+  background-color: var(--ghostWhite);
+  background-image: url(img/mobile/top_left.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  padding: 70px 16px;
+  width: 100%;
+}
+
+#get-started .section-desc {
+  margin-bottom: 20px;
+  padding-right: 5px;
+}
+
+form {
+  width: 100%;
+}
+
+#name,
+#email,
+#message {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 16px;
+  font-size: 0.875em;
+  font-weight: 400;
+  line-height: 1.5em;
+  text-align: left;
+  border-radius: 5px;
+}
+
+#get-started .connect {
+  width: 100%;
+  border-style: none;
+  margin: 0 auto;
+}
+
+/* End CSS Get started */
+
+/* Start CSS Contact */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--harmonies);
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.resume {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25em;
+  font-weight: 500;
+  line-height: 1.2em;
+  text-align: left;
+  color: var(--pastelTurquoise);
+  width: 50%;
+  margin: 20px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* End CSS Contact */
