@@ -26,7 +26,7 @@ body {
   display: grid;
 }
 
-.section-title {
+.section__title {
   font-family: "Playfair Display", serif;
   font-size: 3.125em;
   font-weight: normal;
@@ -36,7 +36,7 @@ body {
   padding: 30px 16px 0 16px;
 }
 
-.section-desc {
+.section__desc {
   font-size: 0.9em;
   font-weight: normal;
   line-height: 1.5em;
@@ -106,8 +106,8 @@ nav {
   justify-content: space-between;
 }
 
-#headline .section-title,
-.section-desc {
+#headline .section__title,
+.section__desc {
   padding: 30px 16px 0 16px;
 }
 
@@ -129,7 +129,7 @@ nav {
   margin: 0 auto;
 }
 
-#project .section-title {
+#project .section__title {
   margin: 40px 16px 20px 16px;
 }
 
@@ -141,7 +141,7 @@ nav {
   margin: 0 auto;
 }
 
-.project-item {
+.project__item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -149,7 +149,7 @@ nav {
   width: 100%;
 }
 
-.project-preview {
+.project__preview {
   height: 55%;
   background-size: cover;
 }
@@ -178,7 +178,7 @@ nav {
   background-image: url(img/mobile/six.png);
 }
 
-.project-description {
+.project__description {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -188,18 +188,18 @@ nav {
   margin: 0 auto;
 }
 
-.project-description * {
+.project__description * {
   align-self: left;
 }
 
-.project-name {
+.project__name {
   font-size: 1.25em;
   font-weight: 100;
   line-height: 0.8em;
   margin-top: 15px;
 }
 
-.project-technologies {
+.project__technologies {
   display: flex;
   justify-content: space-between;
   padding: 0;
@@ -207,7 +207,7 @@ nav {
   margin-bottom: -20px;
 }
 
-.project-technologies li {
+.project__technologies li {
   list-style: none;
   margin-top: -16px;
   margin-right: 8px;
@@ -220,7 +220,7 @@ nav {
   color: var(--black);
 }
 
-.project-visit {
+.project__visit-btn {
   border: 1px solid var(--white);
   text-decoration: none;
   font-size: 1em;
@@ -232,7 +232,7 @@ nav {
   margin-bottom: 20px;
 }
 
-.project-visit img {
+.project__visit-btn img {
   margin-left: 10px;
   margin-bottom: -5px;
 }
@@ -268,28 +268,28 @@ nav {
   color: var(--white);
 }
 
-#skills-card_language {
+#skills__language {
   background: var(--mediumElectricBlue);
   background-image: url(img/mobile/sharp.png);
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 
-#skills-card_framework {
+#skills__framework {
   background: var(--raspberryPink);
   background-image: url(img/mobile/ic_framework.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 
-#skills-card_skill {
+#skills__skill {
   background: var(--maximumYellowRed);
   background-image: url(img/mobile/ic_skills.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 
-.skills-title {
+.skills__title {
   font-size: 1.25em;
   font-weight: 800;
   line-height: 1.5em;
@@ -298,11 +298,11 @@ nav {
   margin-bottom: 21px;
 }
 
-.skills-list {
+.skills__list {
   padding-left: 67px;
 }
 
-.skills-list li {
+.skills__list li {
   font-size: 1.125em;
   font-weight: 600;
   line-height: 1.5em;
@@ -324,7 +324,7 @@ nav {
   width: 100%;
 }
 
-#get-started .section-desc {
+#get-started .section__desc {
   margin-bottom: 20px;
   padding-right: 5px;
 }
@@ -364,7 +364,7 @@ form {
   width: 100%;
 }
 
-.resume {
+.contact__resume {
   display: flex;
   justify-content: space-between;
   font-size: 1.25em;
@@ -376,7 +376,7 @@ form {
   margin: 20px;
 }
 
-.social-media {
+.contact__social-media {
   display: flex;
   justify-content: space-around;
 }
