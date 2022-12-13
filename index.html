@@ -189,42 +189,49 @@
           website. Take a look of my works. If you like what you see and have a
           project you need coded, don’t hesitate and contact me.
         </p>
-        <form action="#">
-          <input type="text" name="name" id="name" placeholder="Your name" />
+        <form action="https://formspree.io/f/xrgdnwbj" method="post">
+          <input type="checkbox" name="placeholder_name" id="placeholder_name">
+          <input type="text" name="name" id="name" placeholder="_" maxlength="30" required/>
+          <label for="placeholder_name" class="placeholder name">Your name</label>
+          <input type="checkbox" name="placeholder_email" id="placeholder_email">
           <input
             type="email"
             name="email"
             id="email"
-            placeholder="Your email"
+            placeholder="_"
+            required
           />
+          <label for="placeholder_email" class="placeholder email">Your email</label>
           <textarea
             name="message"
             id="message"
             placeholder="..Enter your message here.."
             cols="30"
             rows="10"
+            maxlength="500"
+            required
           ></textarea>
           <input type="submit" value="Start Collaboration" class="connect" />
         </form>
       </section>
-      <section id="contact">
-        <div class="contact__resume">
-          <p>Get my resume</p>
-          <img src="img/mobile/ic_link_teal.svg" alt="link_teal" />
-        </div>
-        <div class="contact__social-media">
-          <a href="#"
-            ><img
-              src="img/mobile/ic_stackoverflow.svg"
-              alt="stackOverFlow" /></a
-          ><a href="#"><img src="img/mobile/ic_github.svg" alt="github" /></a
-          ><a href="#"><img src="img/mobile/ic_twitter.svg" alt="twitter" /></a
-          ><a href="#"><img src="img/mobile/ic_medium.svg" alt="medium" /></a
-          ><a href="#"
-            ><img src="img/mobile/ic_angellist.svg" alt="ic_angelList"
-          /></a>
-        </div>
-      </section>
+        <section id="contact">
+          <div class="contact__resume">
+            <p>Get my resume</p>
+            <img src="img/mobile/ic_link_teal.svg" alt="link_teal" />
+          </div>
+          <div class="contact__social-media">
+            <a href="#"
+              ><img
+                src="img/mobile/ic_stackoverflow.svg"
+                alt="stackOverFlow" /></a
+            ><a href="#"><img src="img/mobile/ic_github.svg" alt="github" /></a
+            ><a href="#"><img src="img/mobile/ic_twitter.svg" alt="twitter" /></a
+            ><a href="#"><img src="img/mobile/ic_medium.svg" alt="medium" /></a
+            ><a href="#"
+              ><img src="img/mobile/ic_angellist.svg" alt="ic_angelList"
+            /></a>
+          </div>
+        </section>
     </main>
   </body>
 </html>
