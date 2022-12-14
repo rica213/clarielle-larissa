@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <link
       rel="stylesheet"
       href="https://fonts.google.com/specimen/Playfair+Display?query=playfair+display"
@@ -17,8 +17,14 @@
   </head>
 
   <body>
-    <header class="grid">
+    <header>
       <nav>
+        <ul>
+          <li><a href="#">Hello</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
@@ -26,16 +32,19 @@
     </header>
     <main>
       <section id="headline">
-        <h1 class="section__title">
-          Larissa <br />
-          Clarielle
-        </h1>
-        <p class="section__desc">
-          Hello! I am a software developer! I can help you build a product,
-          feature or website. Take a look of my works. If you like what you see
-          and have a project you need coded, don’t hesitate and contact me.
-        </p>
-        <a href="#" class="connect">Start collaboration</a>
+        <div class="headline_left">
+          <h1 class="section__title">
+            Larissa <br />
+            Clarielle
+          </h1>
+          <p class="section__desc">
+            Hello! I am a software developer! I can help you build a product,
+            feature or website. Take a look of my works. If you like what you
+            see and have a project you need coded, don’t hesitate and contact
+            me.
+          </p>
+          <a href="#" class="connect">Start collaboration</a>
+        </div>
         <div class="separator"></div>
       </section>
       <section id="project" class="grid">
@@ -190,10 +199,27 @@
           project you need coded, don’t hesitate and contact me.
         </p>
         <form action="https://formspree.io/f/xrgdnwbj" method="post">
-          <input type="checkbox" name="placeholder_name" id="placeholder_name">
-          <input type="text" name="name" id="name" placeholder="_" maxlength="30" required/>
-          <label for="placeholder_name" class="placeholder name">Your name</label>
-          <input type="checkbox" name="placeholder_email" id="placeholder_email">
+          <input
+            type="checkbox"
+            name="placeholder_name"
+            id="placeholder_name"
+          />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="_"
+            maxlength="30"
+            required
+          />
+          <label for="placeholder_name" class="placeholder name"
+            >Your name</label
+          >
+          <input
+            type="checkbox"
+            name="placeholder_email"
+            id="placeholder_email"
+          />
           <input
             type="email"
             name="email"
@@ -201,7 +227,9 @@
             placeholder="_"
             required
           />
-          <label for="placeholder_email" class="placeholder email">Your email</label>
+          <label for="placeholder_email" class="placeholder email"
+            >Your email</label
+          >
           <textarea
             name="message"
             id="message"
@@ -214,24 +242,24 @@
           <input type="submit" value="Start Collaboration" class="connect" />
         </form>
       </section>
-        <section id="contact">
-          <div class="contact__resume">
-            <p>Get my resume</p>
-            <img src="img/mobile/ic_link_teal.svg" alt="link_teal" />
-          </div>
-          <div class="contact__social-media">
-            <a href="#"
-              ><img
-                src="img/mobile/ic_stackoverflow.svg"
-                alt="stackOverFlow" /></a
-            ><a href="#"><img src="img/mobile/ic_github.svg" alt="github" /></a
-            ><a href="#"><img src="img/mobile/ic_twitter.svg" alt="twitter" /></a
-            ><a href="#"><img src="img/mobile/ic_medium.svg" alt="medium" /></a
-            ><a href="#"
-              ><img src="img/mobile/ic_angellist.svg" alt="ic_angelList"
-            /></a>
-          </div>
-        </section>
+      <section id="contact">
+        <div class="contact__resume">
+          <p>Get my resume</p>
+          <img src="img/mobile/ic_link_teal.svg" alt="link_teal" />
+        </div>
+        <div class="contact__social-media">
+          <a href="#"
+            ><img
+              src="img/mobile/ic_stackoverflow.svg"
+              alt="stackOverFlow" /></a
+          ><a href="#"><img src="img/mobile/ic_github.svg" alt="github" /></a
+          ><a href="#"><img src="img/mobile/ic_twitter.svg" alt="twitter" /></a
+          ><a href="#"><img src="img/mobile/ic_medium.svg" alt="medium" /></a
+          ><a href="#"
+            ><img src="img/mobile/ic_angellist.svg" alt="ic_angelList"
+          /></a>
+        </div>
+      </section>
     </main>
   </body>
 </html>
