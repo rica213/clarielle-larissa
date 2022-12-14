@@ -141,11 +141,14 @@ nav ul {
 }
 
 #project .section__title {
-  margin: 40px 16px 20px 16px;
+  background: var(--white);
+  padding-bottom: 25px;
+  padding-top: 40px;
 }
 
 .project-container {
-  grid-template-rows: repeat(6, auto);
+  display: flex;
+  flex-direction: column;
   width: 100%;
   background: var(--harmonies);
   color: var(--white);
@@ -448,6 +451,13 @@ input[type="checkbox"] {
 /* Desktop version */
 
 @media screen and (min-width: 768px) {
+  .section__title {
+    font-size: 6.875em;
+    font-weight: 400;
+    line-height: 1em;
+    text-align: left;
+  }
+
   /* Begin header */
 
   header {
@@ -501,6 +511,7 @@ input[type="checkbox"] {
 
   #headline {
     flex-direction: row;
+    margin-bottom: 210px;
   }
 
   .headline_left {
@@ -508,15 +519,14 @@ input[type="checkbox"] {
     background-position: right bottom;
     background-repeat: no-repeat;
     margin-left: 160px;
-    margin-right: 94px;
   }
 
   #headline .section__title {
-    margin: 192px 0 60px 0;
-    font-size: 6.875em;
-    font-weight: 400;
-    line-height: 1em;
-    text-align: left;
+    margin: 192px 94px 30px 0;
+  }
+
+  #headline .section__desc {
+    margin-right: 94px;
   }
 
   #headline .connect {
@@ -526,12 +536,45 @@ input[type="checkbox"] {
     line-height: 1.5em;
     text-align: center;
     padding: 21.76px 25.16px;
+    margin-right: 94px;
   }
 
   .separator {
     background-image: url(img/desktop/separator.svg);
     height: 877px;
+    margin-top: 0;
   }
 
   /* End headline */
+
+  /* Begin project */
+
+  .project-container {
+    display: grid;
+    grid-template-columns: 32.29% 23.26% 12.15% 32.29%;
+    grid-template-rows: 558px 350px 465px 270px;
+    background: var(--white);
+  }
+
+  .project__title {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url(img/desktop/image_dots_two.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: relative;
+  }
+
+  #project .project-container .project__title h2 {
+    font-size: 6.875em;
+    font-weight: 400;
+    line-height: 1em;
+    text-align: left;
+    transform: translateX(-120px) rotate(-90deg);
+    color: var(--harmonies);
+    position: absolute;
+    top: 140px;
+  }
+
+  /* End project */
 }
