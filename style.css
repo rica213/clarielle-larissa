@@ -334,6 +334,10 @@ nav ul {
   text-align: left;
 }
 
+.geometry_three {
+  display: none;
+}
+
 /* End CSS About Section */
 
 /* Start CSS Get started */
@@ -563,7 +567,7 @@ input[type="checkbox"] {
     display: grid;
     grid-template-columns: 32.29% 23.26% 12.15% 32.29%;
     grid-template-rows: 205px 353px 350px 465px 270px;
-    grid-gap: 0;
+    grid-gap: 0 0;
     position: relative;
     background: var(--white);
   }
@@ -770,4 +774,55 @@ input[type="checkbox"] {
   }
 
   /* End project */
+
+  /* Begin About */
+
+  #about {
+    margin: 216px 160px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .about-desc-container {
+    grid-column: 2/3;
+    grid-row: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  #about .about-desc-container .section__title {
+    padding: 0 96px;
+  }
+
+  #about .about-desc-container .section__desc {
+    padding: 30px 96px;
+  }
+
+  #about .about-desc-container .connect {
+    margin-left: 96px;
+  }
+
+  .skills-container {
+    grid-column: 1/2;
+    grid-row: 1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 0;
+    margin: 0;
+  }
+
+  .geometry_four {
+    display: block;
+    background-image: url(img/desktop/image_dots_with_teal.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  /* End About */
+
+  /* Begin Get Started */
+
+  
+
+  /* End Get Started */
 }
