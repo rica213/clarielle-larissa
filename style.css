@@ -457,6 +457,15 @@ input[type="checkbox"] {
   color: var(--pastelTurquoise);
   width: 50%;
   margin: 20px;
+  cursor: pointer;
+}
+
+.get-resume-desktop {
+  display: none;
+}
+
+#contact .contact__resume .get-resume-desktop ~ img {
+  display: none;
 }
 
 .contact__social-media {
@@ -596,8 +605,6 @@ input[type="checkbox"] {
     background-color: var(--harmonies);
     opacity: 0.95;
     width: 100%;
-    -webkit-backdrop-filter: blur(12px);
-    backdrop-filter: blur(12px);
   }
 
   .project__visit-btn {
@@ -857,7 +864,7 @@ input[type="checkbox"] {
     margin-bottom: 40px;
   }
 
-  #get-started .section__desc {
+  #get-started .section__title + .section__desc {
     margin-bottom: 60px;
   }
 
@@ -902,11 +909,47 @@ input[type="checkbox"] {
     font-size: 12px;
   }
 
-  /* stylelint-disable-next-line no-descending-specificity */
-  #get-started .connect {
+  #get-started form > input[type="submit"].connect {
     width: 46.17%;
     margin-bottom: 42px;
   }
 
   /* End Get Started */
+
+  /* Begin Social Media */
+
+  #contact {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 0;
+  }
+
+  .contact__resume {
+    justify-content: flex-start;
+  }
+
+  .contact__resume .get-resume-mobile {
+    display: none;
+  }
+
+  .contact__resume .get-resume-mobile + img {
+    display: none;
+  }
+
+  .contact__resume .get-resume-desktop {
+    display: inline;
+    margin-right: 1rem;
+  }
+
+  #contact .contact__resume .get-resume-desktop ~ img {
+    display: inline;
+  }
+
+  .contact__social-media {
+    justify-content: space-between;
+    align-items: center;
+    width: 20.55%;
+  }
+
+  /* End Social Media */
 }
