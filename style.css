@@ -495,7 +495,7 @@ input[type="checkbox"] {
   }
 
   nav {
-    width: 50%;
+    width: 35%;
     justify-content: center;
   }
 
@@ -605,6 +605,10 @@ input[type="checkbox"] {
     background-color: var(--harmonies);
     opacity: 0.95;
     width: 100%;
+  }
+
+  .project__technologies li {
+    font-size: 1.25em;
   }
 
   .project__visit-btn {
@@ -786,11 +790,10 @@ input[type="checkbox"] {
   }
 
   .geometry_three {
+    display: block;
     grid-column: 1/3;
     grid-row: 5;
-    background-image:
-      url(img/desktop/image-geometry_three.svg),
-      url(img/desktop/cone_yellow.svg);
+    background-image: url(img/desktop/image-geometry_three.png), url(img/desktop/cone_yellow.png);
     background-position: top left, top right;
     background-repeat: no-repeat;
     background-size: auto;
@@ -822,7 +825,7 @@ input[type="checkbox"] {
   }
 
   #about .about-desc-container .connect {
-    margin-left: 96px;
+    margin-left: 70px;
   }
 
   .skills-container {
@@ -832,6 +835,10 @@ input[type="checkbox"] {
     grid-template-rows: 1fr 1fr;
     row-gap: 0;
     margin: 0;
+  }
+
+  .skills__list {
+    padding-bottom: 90px;
   }
 
   .geometry_four {
