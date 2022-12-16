@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <link
       rel="stylesheet"
       href="https://fonts.google.com/specimen/Playfair+Display?query=playfair+display"
@@ -17,8 +17,14 @@
   </head>
 
   <body>
-    <header class="grid">
+    <header>
       <nav>
+        <ul>
+          <li><a href="#headline">Hello</a></li>
+          <li><a href="#project">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
@@ -26,23 +32,29 @@
     </header>
     <main>
       <section id="headline">
-        <h1 class="section__title">
-          Larissa <br />
-          Clarielle
-        </h1>
-        <p class="section__desc">
-          Hello! I am a software developer! I can help you build a product,
-          feature or website. Take a look of my works. If you like what you see
-          and have a project you need coded, don’t hesitate and contact me.
-        </p>
-        <a href="#" class="connect">Start collaboration</a>
+        <div class="headline_left">
+          <h1 class="section__title">
+            Larissa <br />
+            Clarielle
+          </h1>
+          <p class="section__desc">
+            Hello! I am a software developer! I can help you build a product,
+            feature or website. Take a look of my works. If you like what you
+            see and have a project you need coded, don’t hesitate and contact
+            me.
+          </p>
+          <a href="#" class="connect">Start collaboration</a>
+        </div>
         <div class="separator"></div>
       </section>
-      <section id="project" class="grid">
-        <h2 class="section__title">Projects</h2>
-        <div class="project-container grid">
-          <div class="project__item">
+      <section id="project">
+        <div class="project-container">
+          <div class="project__title">
+            <h2 class="section__title">Projects</h2>
+          </div>
+          <div class="project__item project__item_one">
             <div class="project__preview one"></div>
+            <div class="one-desktop"></div>
             <div class="project__description">
               <h3 class="project__name">Project name goes here</h3>
               <ul class="project__technologies">
@@ -52,12 +64,12 @@
               </ul>
               <a href="#" class="project__visit-btn"
                 >See this project<img
-                  src="img/mobile/arrow.png"
+                  src="img/desktop/arrow_right.svg"
                   alt="arrow right"
               /></a>
             </div>
           </div>
-          <div class="project__item">
+          <div class="project__item project__item_two">
             <div class="project__preview two"></div>
             <div class="project__description">
               <h3 class="project__name">Project name goes here</h3>
@@ -73,7 +85,7 @@
               /></a>
             </div>
           </div>
-          <div class="project__item">
+          <div class="project__item project__item_three">
             <div class="project__preview three"></div>
             <div class="project__description">
               <h3 class="project__name">Project name goes here</h3>
@@ -89,7 +101,7 @@
               /></a>
             </div>
           </div>
-          <div class="project__item">
+          <div class="project__item project__item_four">
             <div class="project__preview four"></div>
             <div class="project__description">
               <h3 class="project__name">Project name goes here</h3>
@@ -104,14 +116,16 @@
               /></a>
             </div>
           </div>
-          <div class="project__item">
+          <div class="project__item project__item_five">
             <div class="project__preview five"></div>
             <div class="project__description">
-              <h3 class="project__name">Project name goes here</h3>
+              <h3 class="project__name mobile">Project name goes here</h3>
+              <h3 class="project__name desktop">Project name goes...</h3>
               <ul class="project__technologies">
                 <li>HTML/CSS</li>
                 <li>Ruby on Rails</li>
                 <li>Javascript</li>
+                <li>+1</li>
               </ul>
               <a href="#" class="project__visit-btn"
                 >See this project<img
@@ -120,7 +134,7 @@
               /></a>
             </div>
           </div>
-          <div class="project__item">
+          <div class="project__item project__item_six">
             <div class="project__preview six"></div>
             <div class="project__description">
               <h3 class="project__name">Project name goes here</h3>
@@ -136,6 +150,9 @@
               /></a>
             </div>
           </div>
+          <div class="geometry_one"></div>
+          <div class="geometry_two"></div>
+          <div class="geometry_three"></div>
         </div>
       </section>
       <section id="about" class="grid">
@@ -180,6 +197,7 @@
               <li>Terminal</li>
             </ul>
           </div>
+          <div class="geometry_four"></div>
         </div>
       </section>
       <section id="get-started" class="grid">
@@ -190,10 +208,27 @@
           project you need coded, don’t hesitate and contact me.
         </p>
         <form action="https://formspree.io/f/xrgdnwbj" method="post">
-          <input type="checkbox" name="placeholder_name" id="placeholder_name">
-          <input type="text" name="name" id="name" placeholder="_" maxlength="30" required/>
-          <label for="placeholder_name" class="placeholder name">Your name</label>
-          <input type="checkbox" name="placeholder_email" id="placeholder_email">
+          <input
+            type="checkbox"
+            name="placeholder_name"
+            id="placeholder_name"
+          />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="_"
+            maxlength="30"
+            required
+          />
+          <label for="placeholder_name" class="placeholder name"
+            >Your name</label
+          >
+          <input
+            type="checkbox"
+            name="placeholder_email"
+            id="placeholder_email"
+          />
           <input
             type="email"
             name="email"
@@ -201,7 +236,9 @@
             placeholder="_"
             required
           />
-          <label for="placeholder_email" class="placeholder email">Your email</label>
+          <label for="placeholder_email" class="placeholder email"
+            >Your email</label
+          >
           <textarea
             name="message"
             id="message"
@@ -214,24 +251,26 @@
           <input type="submit" value="Start Collaboration" class="connect" />
         </form>
       </section>
-        <section id="contact">
-          <div class="contact__resume">
-            <p>Get my resume</p>
-            <img src="img/mobile/ic_link_teal.svg" alt="link_teal" />
-          </div>
-          <div class="contact__social-media">
-            <a href="#"
-              ><img
-                src="img/mobile/ic_stackoverflow.svg"
-                alt="stackOverFlow" /></a
-            ><a href="#"><img src="img/mobile/ic_github.svg" alt="github" /></a
-            ><a href="#"><img src="img/mobile/ic_twitter.svg" alt="twitter" /></a
-            ><a href="#"><img src="img/mobile/ic_medium.svg" alt="medium" /></a
-            ><a href="#"
-              ><img src="img/mobile/ic_angellist.svg" alt="ic_angelList"
-            /></a>
-          </div>
-        </section>
+      <section id="contact">
+        <div class="contact__resume">
+          <p class="get-resume-mobile">Get my resume</p>
+          <img src="img/mobile/ic_link_teal.svg" alt="link_teal" />
+          <p class="get-resume-desktop">Get my CV</p>
+          <img src="img/desktop/ic-link_teal.svg" alt="" />
+        </div>
+        <div class="contact__social-media">
+          <a href="#"
+            ><img
+              src="img/mobile/ic_stackoverflow.svg"
+              alt="stackOverFlow" /></a
+          ><a href="#"><img src="img/mobile/ic_github.svg" alt="github" /></a
+          ><a href="#"><img src="img/mobile/ic_twitter.svg" alt="twitter" /></a
+          ><a href="#"><img src="img/mobile/ic_medium.svg" alt="medium" /></a
+          ><a href="#"
+            ><img src="img/mobile/ic_angellist.svg" alt="ic_angelList"
+          /></a>
+        </div>
+      </section>
     </main>
   </body>
 </html>
