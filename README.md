@@ -97,6 +97,10 @@
 - Twitter: [@alc3and](https://twitter.com/alc3and)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/larissa-clarielle-andrainasoa-8768a3256)
 
+👤 **Lawrence**
+
+- GitHub: [@Kwaku28(https://github.com/Kwaku28)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
