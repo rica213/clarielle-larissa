@@ -99,7 +99,7 @@
 
 👤 **Lawrence**
 
-- GitHub: [@Kwaku28(https://github.com/Kwaku28)
+- GitHub: [@Kwaku28](https://github.com/Kwaku28)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
