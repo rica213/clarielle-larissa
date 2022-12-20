@@ -528,6 +528,10 @@ input[type="checkbox"] {
     padding-bottom: 4px;
   }
 
+  nav ul li a:focus {
+    outline: #1875df;
+  }
+
   nav ul li a:hover::before {
     position: absolute;
     bottom: 0;
@@ -559,7 +563,7 @@ input[type="checkbox"] {
   #headline .section__title {
     margin: 192px 94px 30px 0;
     animation-name: bigger-font;
-    animation-duration: 10s;
+    animation-duration: 3s;
   }
 
   #headline .section__desc {
