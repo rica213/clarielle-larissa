@@ -89,17 +89,23 @@
 
 ## 👥 Authors <a name="authors"></a>
 
-> List of collaborators.
-
 👤 **Larissa (Tao)**
 
 - GitHub: [@rica213](https://github.com/rica213)
 - Twitter: [@alc3and](https://twitter.com/alc3and)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/larissa-clarielle-andrainasoa-8768a3256)
 
+> List of collaborators.
+
 👤 **Lawrence**
 
 - GitHub: [@Kwaku28](https://github.com/Kwaku28)
+
+
+👤 **Bright**
+
+- GitHub: [@brightbrain20](https://github.com/brightbrain20)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
