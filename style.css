@@ -483,7 +483,7 @@ input[type="checkbox"] {
 
 @media screen and (min-width: 768px) {
   .section__title {
-    font-size: 6.875rem;
+    font-size: 5.333rem;
     font-weight: 400;
     line-height: 1em;
     text-align: left;
@@ -657,7 +657,7 @@ input[type="checkbox"] {
   .project__item_one .project__name {
     font-style: normal;
     font-weight: 700;
-    font-size: 3.75rem;
+    font-size: 2.9rem;
     line-height: 80%;
   }
 
@@ -753,7 +753,7 @@ input[type="checkbox"] {
     display: inline;
     font-style: normal;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 1.94rem;
     line-height: 80%;
   }
 
