@@ -61,6 +61,7 @@ body {
   padding: 12px 42px;
   margin: 20px 16px;
   text-decoration: none;
+  transition: color 1s, background-color 1s, border 1s ease-in-out;
 }
 
 .connect:hover {
@@ -73,6 +74,11 @@ body {
 .connect:active {
   cursor: pointer;
   border: 2px solid var(--harmonies);
+}
+
+.connect:hover img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
 }
 
 /* Start CSS Header */
@@ -253,7 +259,7 @@ nav ul {
 .project__visit-btn {
   border: 1px solid var(--white);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.87rem;
   font-weight: 500;
   line-height: 1.5em;
   text-align: center;
@@ -262,11 +268,16 @@ nav ul {
   margin: 20px 0;
 }
 
-.project__visit-btn img {
+#project .project__visit-btn img {
   margin-left: 10px;
   margin-bottom: -5px;
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
+  -webkit-filter: none;
+  filter: none;
+}
+
+#project .project__item_one .project__visit-btn img {
+  -webkit-filter: brightness(10);
+  filter: brightness(10);
 }
 
 /* End CSS Work Section */
@@ -286,7 +297,7 @@ nav ul {
   margin-top: 40px;
 }
 
-#about .connect img {
+#about .about-desc-container .connect img {
   margin-left: 20px;
   margin-bottom: -5px;
 }
@@ -411,7 +422,7 @@ input[type="checkbox"]:checked ~ .placeholder.name,
   position: absolute;
   top: 4px;
   left: 16px;
-  transition: 0.1s ease all;
+  transition: transform 0.4s ease-in-out;
   font-size: 0.65rem;
 }
 
@@ -547,13 +558,13 @@ input[type="checkbox"] {
   #headline {
     flex-direction: row;
     margin-bottom: 210px;
+    margin-left: 11%;
   }
 
   .headline_left {
     background-image: url(img/desktop/image_dots.svg);
     background-position: right bottom;
     background-repeat: no-repeat;
-    margin-left: 160px;
   }
 
   #headline .section__title {
@@ -567,7 +578,7 @@ input[type="checkbox"] {
 
   #headline .connect {
     width: 50%;
-    font-size: 1.125rem;
+    font-size: 0.87rem;
     font-weight: 500;
     line-height: 1.5em;
     text-align: center;
@@ -617,13 +628,23 @@ input[type="checkbox"] {
   }
 
   .project__technologies li {
-    font-size: 1.25rem;
+    font-size: 0.97rem;
   }
 
   .project__visit-btn {
     color: var(--harmonies);
     background-color: var(--white);
     border-color: var(--harmonies);
+  }
+
+  #project .project__visit-btn img {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
+
+  #project .project__item_one .project__visit-btn img {
+    -webkit-filter: none;
+    filter: none;
   }
 
   .project__item {
@@ -667,9 +688,14 @@ input[type="checkbox"] {
 
   .project__item_one .project__visit-btn {
     margin-top: 60px;
+    transition: font-size 1s;
   }
 
-  .project__item_one .project__visit-btn img {
+  .project__item_one .project__visit-btn:hover {
+    font-size: 0.9rem;
+  }
+
+  #project .project__item .project__item_one .project__visit-btn img {
     -webkit-filter: none;
     filter: none;
   }
@@ -815,7 +841,7 @@ input[type="checkbox"] {
   /* Begin About */
 
   #about {
-    margin: 216px 160px;
+    margin: 15% 11% 11% 11%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
   }
@@ -828,15 +854,16 @@ input[type="checkbox"] {
   }
 
   #about .about-desc-container .section__title {
-    padding: 0 96px;
+    padding: 0 13.67%;
   }
 
   #about .about-desc-container .section__desc {
-    padding: 30px 96px;
+    padding: 30px 13.67%;
+    margin: 0;
   }
 
   #about .about-desc-container .connect {
-    margin-left: 70px;
+    margin-left: 13.67%;
   }
 
   .skills-container {
@@ -846,10 +873,24 @@ input[type="checkbox"] {
     grid-template-rows: 1fr 1fr;
     row-gap: 0;
     margin: 0;
+    padding: 0;
+  }
+
+  .skills__card {
+    padding: 17%;
+  }
+
+  .skills__title {
+    font-size: 1rem;
+    padding: 0;
   }
 
   .skills__list {
-    padding-bottom: 90px;
+    padding: 0;
+  }
+
+  #about .skills__list li {
+    font-size: 0.88rem;
   }
 
   .geometry_four {
@@ -872,7 +913,7 @@ input[type="checkbox"] {
   }
 
   #get-started * {
-    width: 38%;
+    width: 42%;
     margin: 0 auto;
   }
 
@@ -908,28 +949,43 @@ input[type="checkbox"] {
     margin-bottom: 40px;
   }
 
-  .placeholder.name,
+  .placeholder.name {
+    position: absolute;
+    top: -18px;
+    font-size: 0.75rem;
+  }
+
   input[type="checkbox"]:checked ~ .placeholder.name,
   #name:focus ~ .placeholder.name,
   #name:not(:focus):valid ~ .placeholder.name {
     position: absolute;
-    top: -18px;
-    font-size: 12px;
+    top: -20px;
+    font-size: 0.8rem;
+    font-weight: 500;
   }
 
-  .placeholder.email,
-  input[type="checkbox"]:checked ~ .placeholder.email,
-  #email:focus ~ .placeholder.email,
-  #email:not(:focus):valid ~ .placeholder.email {
+  .placeholder.email {
     position: absolute;
     top: -18px;
     left: 52%;
     font-size: 0.75rem;
   }
 
+  input[type="checkbox"]:checked ~ .placeholder.email,
+  #email:focus ~ .placeholder.email,
+  #email:not(:focus):valid ~ .placeholder.email {
+    position: absolute;
+    top: -20px;
+    left: 52%;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
   #get-started form > input[type="submit"].connect {
-    width: 46.17%;
+    width: 15.875rem;
     margin-bottom: 42px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.87rem;
   }
 
   /* End Get Started */
@@ -950,7 +1006,8 @@ input[type="checkbox"] {
     display: none;
   }
 
-  .contact__resume .get-resume-mobile + img {
+  /* stylelint-disable-next-line no-descending-specificity */
+  #contact .contact__resume .get-resume-mobile + img {
     display: none;
   }
 
@@ -959,6 +1016,7 @@ input[type="checkbox"] {
     margin-right: 1rem;
   }
 
+  /* stylelint-disable-next-line no-descending-specificity */
   #contact .contact__resume .get-resume-desktop ~ img {
     display: inline;
   }
