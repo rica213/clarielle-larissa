@@ -1,3 +1,7 @@
+html {
+  font-size: calc(15px + 0.390625vw);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,7 +22,7 @@
 }
 
 body {
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   min-height: 100vh;
 }
 
@@ -27,8 +31,8 @@ body {
 }
 
 .section__title {
-  font-family: "Playfair Display", serif;
-  font-size: 3.125em;
+  font-family: 'Playfair Display', serif;
+  font-size: 3.125rem;
   font-weight: normal;
   line-height: 1em;
   text-align: left;
@@ -37,7 +41,7 @@ body {
 }
 
 .section__desc {
-  font-size: 0.9em;
+  font-size: 0.9rem;
   font-weight: normal;
   line-height: 1.5em;
   letter-spacing: -0.01em;
@@ -48,7 +52,7 @@ body {
 }
 
 .connect {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5em;
   text-align: center;
@@ -210,7 +214,7 @@ nav ul {
 }
 
 .project__name {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-weight: 100;
   line-height: 1.25em;
   margin-top: 15px;
@@ -235,7 +239,7 @@ nav ul {
   margin-top: 10px;
   padding: 6px 10px;
   background: var(--pastelTurquoise);
-  font-size: 0.625em;
+  font-size: 0.625rem;
   font-weight: 300;
   line-height: 0.8em;
   text-align: left;
@@ -249,7 +253,7 @@ nav ul {
 .project__visit-btn {
   border: 1px solid var(--white);
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5em;
   text-align: center;
@@ -318,7 +322,7 @@ nav ul {
 }
 
 .skills__title {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-weight: 800;
   line-height: 1.5em;
   padding-left: 50px;
@@ -331,7 +335,7 @@ nav ul {
 }
 
 #about .skills__list li {
-  font-size: 1.125em;
+  font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.5em;
   letter-spacing: -0.0525em;
@@ -374,7 +378,7 @@ form {
   width: 100%;
   margin-bottom: 8px;
   padding: 16px;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5em;
   text-align: left;
@@ -382,7 +386,7 @@ form {
 }
 
 .placeholder {
-  font-size: 0.875em;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5em;
   text-align: left;
@@ -408,7 +412,7 @@ input[type="checkbox"]:checked ~ .placeholder.name,
   top: 4px;
   left: 16px;
   transition: 0.1s ease all;
-  font-size: 0.65em;
+  font-size: 0.65rem;
 }
 
 input[type="checkbox"]:checked ~ .placeholder.email,
@@ -418,7 +422,7 @@ input[type="checkbox"]:checked ~ .placeholder.email,
   top: 68px;
   left: 16px;
   transition: 0.1s ease all;
-  font-size: 0.65em;
+  font-size: 0.65rem;
 }
 
 input[type="checkbox"] {
@@ -450,7 +454,7 @@ input[type="checkbox"] {
 .contact__resume {
   display: flex;
   justify-content: space-between;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.2em;
   text-align: left;
@@ -479,7 +483,7 @@ input[type="checkbox"] {
 
 @media screen and (min-width: 768px) {
   .section__title {
-    font-size: 6.875em;
+    font-size: 6.875rem;
     font-weight: 400;
     line-height: 1em;
     text-align: left;
@@ -512,7 +516,7 @@ input[type="checkbox"] {
     text-decoration: none;
     font-style: normal;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1rem;
     line-height: 1.5em;
     text-align: right;
     color: var(--harmonies);
@@ -563,7 +567,7 @@ input[type="checkbox"] {
 
   #headline .connect {
     width: 50%;
-    font-size: 1.125em;
+    font-size: 1.125rem;
     font-weight: 500;
     line-height: 1.5em;
     text-align: center;
@@ -613,7 +617,7 @@ input[type="checkbox"] {
   }
 
   .project__technologies li {
-    font-size: 1.25em;
+    font-size: 1.25rem;
   }
 
   .project__visit-btn {
@@ -653,7 +657,7 @@ input[type="checkbox"] {
   .project__item_one .project__name {
     font-style: normal;
     font-weight: 700;
-    font-size: 3.75em;
+    font-size: 3.75rem;
     line-height: 80%;
   }
 
@@ -749,7 +753,7 @@ input[type="checkbox"] {
     display: inline;
     font-style: normal;
     font-weight: 700;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     line-height: 80%;
   }
 
@@ -895,8 +899,8 @@ input[type="checkbox"] {
     margin-bottom: 42px;
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 0.75rem;
+    line-height: 1.5em;
   }
 
   #message {
@@ -920,7 +924,7 @@ input[type="checkbox"] {
     position: absolute;
     top: -18px;
     left: 52%;
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   #get-started form > input[type="submit"].connect {
