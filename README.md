@@ -36,6 +36,7 @@
 
 
 **portfolio** is a website to show projects and works for everyone to see.
+[Here's a walkthrough video](https://www.loom.com/share/246840fc8755429787c5bda2dc6fa1a7)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -58,8 +59,11 @@
 
 ### Key Features <a name="key-features"></a>
   <ul>
-    <li>Introduction Section</li>
     <li>Responsive Design</li>
+    <li>Introduction Section</li>   
+    <li>Social Media Accounts</li>
+    <li>Personal Projects</li>
+    <li>Testimonials</li>
   </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -114,9 +118,7 @@
 ## 🔭 Future Features <a name="future-features"></a>
 
  <ul>
-    <li>Social Media Accounts</li>
-    <li>Personal Projects</li>
-    <li>Testimonials</li>
+    <li>Interaction using JS </li>
   </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -143,7 +145,12 @@ Feel free to check the [issues page](../../issues/).
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> I would like to thank Microverse for their guidance and all the reviewers for their time.
+> I would like to acknowledge
+  - The Microverse team
+  - All my reviewers
+  - My standup teammates
+  - My coding partners
+  - My morning session teammates
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
