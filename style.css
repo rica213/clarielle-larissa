@@ -21,9 +21,23 @@ html {
   --ghostWhite: #f9f9fa;
 }
 
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   min-height: 100vh;
+}
+
+.noscroll {
+  overflow: hidden;
 }
 
 .grid {
@@ -31,7 +45,7 @@ body {
 }
 
 .section__title {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 3.125rem;
   font-weight: normal;
   line-height: 1em;
@@ -91,6 +105,7 @@ header {
   width: 100%;
   background-image: url(img/mobile/top_left.svg);
   background-repeat: no-repeat;
+  position: relative;
 }
 
 nav {
@@ -100,6 +115,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 nav ul {
@@ -111,6 +127,59 @@ nav ul {
 }
 
 /* End CSS Header */
+
+/* Popup menu */
+.popup-menu {
+  display: none;
+  background-image:
+    url(img/mobile/top-left_menu.svg),
+    url(img/mobile/dots_images.svg),
+    url(img/mobile/dots_images.svg),
+    url(img/mobile/down_mask.svg);
+  background-position: top left, 85% 15%, 15% 83%, bottom;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.popup-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 30%;
+  margin-top: 25.35%;
+}
+
+.popup-menu ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.popup-menu ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 3em;
+  text-align: center;
+  color: var(--black);
+}
+
+.close-btn {
+  text-align: right;
+  font-size: 3rem;
+  font-weight: 100;
+  margin-right: 2%;
+  color: var(--gray77);
+  cursor: pointer;
+}
+
+/* End popup menu */
 
 /* Start CSS Headline */
 
@@ -239,7 +308,7 @@ nav ul {
   margin-top: 10px;
 }
 
-.project__technologies li {
+.project__description .project__technologies li {
   list-style: none;
   margin-right: 8px;
   margin-top: 10px;
@@ -984,7 +1053,7 @@ input[type="checkbox"] {
   #get-started form > input[type="submit"].connect {
     width: 15.875rem;
     margin-bottom: 42px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 0.87rem;
   }
 
