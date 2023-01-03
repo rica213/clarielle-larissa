@@ -168,6 +168,11 @@ nav ul {
   line-height: 3em;
   text-align: center;
   color: var(--black);
+  transition: font-size 0.5s;
+}
+
+.popup-menu ul li a:hover{
+  font-size: 1.2rem;
 }
 
 .close-btn {
