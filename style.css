@@ -289,10 +289,6 @@ nav ul {
   margin: 0 auto;
 }
 
-.project__description * {
-  align-self: left;
-}
-
 .project__name {
   font-size: 1.25rem;
   font-weight: 100;
