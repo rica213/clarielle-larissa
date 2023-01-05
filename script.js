@@ -103,19 +103,20 @@ const closeProject = () => {
 };
 
 const navigateProject = (id) => {
+  closeProject();
   openProject();
 
-  projectDetails[id].projectName.innerText = project.name;
-  projectDetails[id].technologies.textContent = '';
-  projectDetails[id].project.technologies.forEach((tech) => {
+  projectName.innerText = projectDetails[id].name;
+  technologies.textContent = '';
+  projectDetails[id].technologies.forEach((tech) => {
     const techList = document.createElement('li');
     techList.innerText = tech;
     technologies.appendChild(techList);
   });
-  projectDetails[id].featuredImage.src = project.featuredImage;
-  projectDetails[id].description.innerText = project.description;
-  projectDetails[id].live.href = project.live;
-  projectDetails[id].source.href = project.source;
+  featuredImage.src = projectDetails[id].featuredImage;
+  description.innerText = projectDetails[id].description;
+  live.href = projectDetails[id].live;
+  source.href = projectDetails[id].source;
 };
 
 closeProjectBtn.addEventListener('click', closeProject);
@@ -152,5 +153,8 @@ seeProjectArr.forEach((seeProject) => {
       next.classList.add('disabled');
     else
       next.classList.remove('disabled');
-  });
+  
+    previous.addEventListener('click', navigateProject((seeProject.id)-2));
+    next.addEventListener('click', navigateProject(seeProject.id));
+    });
 });
