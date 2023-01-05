@@ -28,35 +28,35 @@ const projectDetails= [
   {
     id: '1',
     name: 'project name one',
-    description: 'project description one',
+    description: 'description for the project one',
     featuredImage: 'img/mobile/one.png',
     technologies: ['html/css', 'ruby on rails', 'javascript'],
-    live: 'link/to/live',
-    source: 'link/to/source',
+    live: '#',
+    source: '#',
   },
   {
     id: '2',
     name: 'project name two',
-    description: 'project description two',
-    featuredImage: 'path/to/featured/image',
-    technologies: ['html/css', 'ruby on rails', 'javascript'],
-    live: 'link/to/live',
-    source: 'link/to/source',
+    description: 'description for the project two',
+    featuredImage: 'img/mobile/two.png',
+    technologies: ['html/css', 'javascript'],
+    live: '#',
+    source: '#',
   },
   {
     id: '3',
     name: 'project name three',
-    description: 'project description three',
-    featuredImage: 'path/to/featured/image',
+    description: 'description for the project three',
+    featuredImage: 'img/mobile/three.png',
     technologies: ['html/css', 'ruby on rails', 'javascript'],
-    live: 'link/to/live',
-    source: 'link/to/source',
+    live: '#',
+    source: '#',
   },
   {
     id: '4',
     name: 'project name four',
-    description: 'project description four',
-    featuredImage: 'path/to/featured/image',
+    description: 'description for the project four',
+    featuredImage: 'img/mobile/four.png',
     technologies: ['html/css', 'ruby on rails', 'javascript'],
     live: '#',
     source: '#',
@@ -64,8 +64,8 @@ const projectDetails= [
   {
     id: '5',
     name: 'project name five',
-    description: 'project description five',
-    featuredImage: 'path/to/featured/image',
+    description: 'description for the project five',
+    featuredImage: 'img/mobile/five.png',
     technologies: ['html/css', 'ruby on rails', 'javascript'],
     live: '#',
     source: '#',
@@ -73,8 +73,8 @@ const projectDetails= [
   {
     id: '6',
     name: 'project name six',
-    description: 'project description six',
-    featuredImage: 'path/to/featured/image',
+    description: 'description for the project six',
+    featuredImage: 'img/mobile/six.png',
     technologies: ['html/css', 'ruby on rails', 'javascript'],
     live: '#',
     source: '#',
@@ -85,6 +85,7 @@ const seeProjectArr = document.querySelectorAll('.project__visit-btn');
 const projectWindow = document.querySelector('aside');
 const closeProjectBtn = document.querySelector('.close-project');
 const projectName = document.querySelector('.project-details__name');
+const technologies = document.querySelector('.project-details__technologies');
 const featuredImage = document.querySelector('.project-details__featured-img');
 const description = document.querySelector('.project-details__description');
 const live = document.querySelector('.project-details__link_live');
@@ -111,63 +112,20 @@ seeProjectArr.forEach((seeProject) =>
     projectDetails.forEach((project) => {
       if(project['id'] === seeProject.id) {
         projectName.innerText = project.name;
+        technologies.textContent = '';
+        project.technologies.forEach((tech) =>
+        {
+          const techList = document.createElement('li');
+          techList.innerText = tech;
+          technologies.appendChild(techList);
+        });
+        featuredImage.src = project.featuredImage;
+        description.innerText = project.description;
+        live.href = project.live;
+        source.href = project.source;
+
       }
     })
   })
 }
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* const projectDetailsWindow = document.querySelector('aside');
-const projectName = document.querySelector('.project-details__name');
-const technologies = document.querySelector('.project-details__technologies');
-
-const closeProjectBtn = document.querySelector('.close-project');
-
-const firstProject = document.querySelector('.project__item_one .project__visit-btn');
-const secondProject = document.querySelector('.project__item_two .project__visit-btn');
-const thirdProject = document.querySelector('.project__item_three .project__visit-btn');
-const fourthProject = document.querySelector('.project__item_four .project__visit-btn');
-const fifthProject = document.querySelector('.project__item_five .project__visit-btn');
-const sixthProject = document.querySelector('.project__item_six .project__visit-btn');
-
-const openProject = () => {
-  projectDetailsWindow.style.display = 'block';
-  projectName.innerText = projectDetails[0].name;
-};
-
-const closeProject = () => {
-  projectDetailsWindow.style.display = 'none';
-};
-
-firstProject.addEventListener('click', openProject());
-secondProject.addEventListener('click', openProject(1));
-thirdProject.addEventListener('click', openProject(2));
-fourthProject.addEventListener('click', openProject(3));
-fifthProject.addEventListener('click', openProject(4));
-sixthProject.addEventListener('click', openProject(5));
-
-closeProjectBtn.addEventListener('click', closeProject);
- */

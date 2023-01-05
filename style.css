@@ -437,7 +437,7 @@ nav ul {
 }
 
 .project_details__navigation {
-  display: flex;
+  display: none;
   width: 95%;
   justify-content: space-around;
   margin: 0 auto;
@@ -1221,6 +1221,10 @@ input[type="checkbox"] {
   /* stylelint-disable-next-line no-descending-specificity */
   .project-details .project-details__technologies li {
     font-size: 1.25rem;
+  }
+
+  .project_details__navigation {
+    display: flex;
   }
 
   .project-details__link-container {
