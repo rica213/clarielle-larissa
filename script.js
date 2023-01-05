@@ -28,7 +28,7 @@ const projectDetails = [
   {
     id: '1',
     name: 'project name one',
-    description: 'description for the project one',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nisi ex, expedita corrupti illo commodi minima incidunt fuga voluptas voluptatum! Magnam eveniet unde modi aliquam accusamus esse magni, adipisci nostrum?',
     featuredImage: 'img/mobile/one.png',
     technologies: ['html/css', 'ruby on rails', 'javascript'],
     live: '#',
@@ -37,7 +37,7 @@ const projectDetails = [
   {
     id: '2',
     name: 'project name two',
-    description: 'description for the project two',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nisi ex, expedita corrupti illo commodi minima incidunt fuga voluptas voluptatum! Magnam eveniet unde modi aliquam accusamus esse magni, adipisci nostrum?',
     featuredImage: 'img/mobile/two.png',
     technologies: ['html/css', 'javascript'],
     live: '#',
@@ -46,7 +46,7 @@ const projectDetails = [
   {
     id: '3',
     name: 'project name three',
-    description: 'description for the project three',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nisi ex, expedita corrupti illo commodi minima incidunt fuga voluptas voluptatum! Magnam eveniet unde modi aliquam accusamus esse magni, adipisci nostrum?',
     featuredImage: 'img/mobile/three.png',
     technologies: ['html/css', 'ruby on rails', 'javascript'],
     live: '#',
@@ -55,7 +55,7 @@ const projectDetails = [
   {
     id: '4',
     name: 'project name four',
-    description: 'description for the project four',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nisi ex, expedita corrupti illo commodi minima incidunt fuga voluptas voluptatum! Magnam eveniet unde modi aliquam accusamus esse magni, adipisci nostrum?',
     featuredImage: 'img/mobile/four.png',
     technologies: ['html/css', 'ruby on rails', 'javascript'],
     live: '#',
@@ -64,7 +64,7 @@ const projectDetails = [
   {
     id: '5',
     name: 'project name five',
-    description: 'description for the project five',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nisi ex, expedita corrupti illo commodi minima incidunt fuga voluptas voluptatum! Magnam eveniet unde modi aliquam accusamus esse magni, adipisci nostrum?  ',
     featuredImage: 'img/mobile/five.png',
     technologies: ['html/css', 'ruby on rails', 'javascript'],
     live: '#',
@@ -73,7 +73,7 @@ const projectDetails = [
   {
     id: '6',
     name: 'project name six',
-    description: 'description for the project six',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nisi ex, expedita corrupti illo commodi minima incidunt fuga voluptas voluptatum! Magnam eveniet unde modi aliquam accusamus esse magni, adipisci nostrum?',
     featuredImage: 'img/mobile/six.png',
     technologies: ['html/css', 'ruby on rails', 'javascript'],
     live: '#',
@@ -84,6 +84,8 @@ const projectDetails = [
 const seeProjectArr = document.querySelectorAll('.project__visit-btn');
 const projectWindow = document.querySelector('aside');
 const closeProjectBtn = document.querySelector('.close-project');
+const previous = document.querySelector('.project_details__navigation_link-previous');
+const next = document.querySelector('.project_details__navigation_link-next');
 const projectName = document.querySelector('.project-details__name');
 const technologies = document.querySelector('.project-details__technologies');
 const featuredImage = document.querySelector('.project-details__featured-img');

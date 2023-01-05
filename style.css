@@ -34,6 +34,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 .noscroll {
@@ -1216,11 +1217,17 @@ input[type="checkbox"] {
     font-size: 3.75rem;
     font-weight: 700;
     line-height: 0.8em;
+    margin-bottom: 25px;
   }
 
   /* stylelint-disable-next-line no-descending-specificity */
   .project-details .project-details__technologies li {
     font-size: 1.25rem;
+  }
+
+  .project-details__description {
+    width: 70%;
+    margin: 25px auto;
   }
 
   .project_details__navigation {
