@@ -24,7 +24,7 @@ menuOption.addEventListener('click', closeMenu);
 /* Project details popup window */
 // query variables
 
-const projectDetails= [
+const projectDetails = [
   {
     id: '1',
     name: 'project name one',
@@ -93,7 +93,7 @@ const source = document.querySelector('.project-details__link_source');
 
 const openProject = () => {
   projectWindow.classList.remove('hidden');
-  projectWindow.style.animation= 'fadein 1s';
+  projectWindow.style.animation = 'fadein 1s';
 };
 
 const closeProject = () => {
@@ -103,18 +103,16 @@ const closeProject = () => {
 /* seeProject.addEventListener('click', openProject); */
 closeProjectBtn.addEventListener('click', closeProject);
 
-seeProjectArr.forEach((seeProject) =>
-{
+seeProjectArr.forEach((seeProject) => {
   seeProject.addEventListener('click', () => {
     openProject();
 
-    //update the project details
+    // update the project details
     projectDetails.forEach((project) => {
-      if(project['id'] === seeProject.id) {
+      if (project.id === seeProject.id) {
         projectName.innerText = project.name;
         technologies.textContent = '';
-        project.technologies.forEach((tech) =>
-        {
+        project.technologies.forEach((tech) => {
           const techList = document.createElement('li');
           techList.innerText = tech;
           technologies.appendChild(techList);
@@ -123,9 +121,7 @@ seeProjectArr.forEach((seeProject) =>
         description.innerText = project.description;
         live.href = project.live;
         source.href = project.source;
-
       }
-    })
-  })
-}
-);
+    });
+  });
+});
