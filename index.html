@@ -30,7 +30,7 @@
         <span class="line"></span>
       </nav>
     </header>
-    <div class="popup-menu">
+    <div class="popup-menu hidden">
       <div class="close-btn">&times;</div>
       <ul>
         <li><a href="#headline">Hello</a></li>
@@ -71,7 +71,7 @@
                 <li>Ruby on Rails</li>
                 <li>Javascript</li>
               </ul>
-              <a href="#" class="project__visit-btn"
+              <a href="#" class="project__visit-btn" id="1"
                 >See this project<img
                   src="img/desktop/arrow_right.svg"
                   alt="arrow right"
@@ -87,7 +87,7 @@
                 <li>Ruby on Rails</li>
                 <li>Javascript</li>
               </ul>
-              <a href="#" class="project__visit-btn"
+              <a href="#" class="project__visit-btn" id="2"
                 >See this project<img
                   src="img/mobile/arrow.png"
                   alt="arrow right"
@@ -103,7 +103,7 @@
                 <li>Ruby on Rails</li>
                 <li>Javascript</li>
               </ul>
-              <a href="#" class="project__visit-btn"
+              <a href="#" class="project__visit-btn" id="3"
                 >See this project<img
                   src="img/mobile/arrow.png"
                   alt="arrow right"
@@ -119,7 +119,7 @@
                 <li>Ruby on Rails</li>
                 <li>Javascript</li>
               </ul>
-              <a href="#" class="project__visit-btn"
+              <a href="#" class="project__visit-btn" id="4"
                 >See this project
                 <img src="img/mobile/arrow.png" alt="arrow right"
               /></a>
@@ -136,7 +136,7 @@
                 <li>Javascript</li>
                 <li>+1</li>
               </ul>
-              <a href="#" class="project__visit-btn"
+              <a href="#" class="project__visit-btn" id="5"
                 >See this project<img
                   src="img/mobile/arrow.png"
                   alt="arrow right"
@@ -152,7 +152,7 @@
                 <li>Ruby on Rails</li>
                 <li>Javascript</li>
               </ul>
-              <a href="#" class="project__visit-btn"
+              <a href="#" class="project__visit-btn" id="6"
                 >See this project<img
                   src="img/mobile/arrow.png"
                   alt="arrow right"
@@ -164,9 +164,9 @@
           <div class="geometry_three"></div>
         </div>
       </section>
-      <aside>
+      <aside class="hidden">
         <div class="project-details">
-          <div class="closeProject">&times;</div>
+          <div class="close-project">&times;</div>
           <h2 class="project-details__name">Project name goes here</h2>
           <ul class="project-details__technologies">
             <li>HTML/CSS</li>
@@ -180,18 +180,40 @@
           />
           <p class="project-details__description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-            temporibus eaque ut fuga nisi totam reprehenderit dolorum esse veniam
-            unde inventore rem laboriosam mollitia, cupiditate cumque quidem sed
-            facere beatae!
+            temporibus eaque ut fuga nisi totam reprehenderit dolorum esse
+            veniam unde inventore rem laboriosam mollitia, cupiditate cumque
+            quidem sed facere beatae!
           </p>
-          <a href="#" class="project-details__link">
-            See live
-            <img src="img/mobile/link-to-live.svg" alt="see live link">
-          </a>
-          <a href="#" class="project-details__link">
-            See source 
-            <img src="img/mobile/github.svg" alt="see source link">
-          </a>
+          <div class="project-details__link-container">
+            <a href="#" class="project-details__link project-details__link_live">
+              See live
+              <img
+                src="img/mobile/link-to-live.svg"
+                alt="see live link"
+                class="project_details__link_img"
+              />
+            </a>
+            <a href="#" class="project-details__link project-details__link_source">
+              See source
+              <img
+                src="img/mobile/github.svg"
+                alt="see source link"
+                class="project_details__link_img"
+              />
+            </a>
+          </div>
+          <div class="project_details__navigation">
+            <a href="#" class="project_details__navigation_link"
+              ><img
+                src="img/mobile/arrow_left.svg"
+                alt="arrow pointing left"
+              />Previous project</a
+            ><a href="#" class="project_details__navigation_link"
+              >Next project<img
+                src="img/mobile/arrow_right.svg"
+                alt="arrow pointing right"
+            /></a>
+          </div>
         </div>
       </aside>
       <section id="about" class="grid">
