@@ -102,7 +102,22 @@ const closeProject = () => {
   projectWindow.classList.add('hidden');
 };
 
-/* seeProject.addEventListener('click', openProject); */
+const navigateProject = (id) => {
+  openProject();
+
+  projectDetails[id].projectName.innerText = project.name;
+  projectDetails[id].technologies.textContent = '';
+  projectDetails[id].project.technologies.forEach((tech) => {
+    const techList = document.createElement('li');
+    techList.innerText = tech;
+    technologies.appendChild(techList);
+  });
+  projectDetails[id].featuredImage.src = project.featuredImage;
+  projectDetails[id].description.innerText = project.description;
+  projectDetails[id].live.href = project.live;
+  projectDetails[id].source.href = project.source;
+};
+
 closeProjectBtn.addEventListener('click', closeProject);
 
 seeProjectArr.forEach((seeProject) => {
@@ -125,5 +140,17 @@ seeProjectArr.forEach((seeProject) => {
         source.href = project.source;
       }
     });
+
+    //disable/enable previous project button
+    if (seeProject.id === '1')
+      previous.classList.add('disabled');
+    else
+      previous.classList.remove('disabled');
+  
+    //disable/enable next project button
+    if (seeProject.id === (projectDetails.length).toString())
+      next.classList.add('disabled');
+    else
+      next.classList.remove('disabled');
   });
 });
