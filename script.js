@@ -103,8 +103,7 @@ const closeProject = () => {
 };
 
 const navigateProject = (id) => {
-  closeProject();
-  openProject();
+  /* openProject(); */
 
   projectName.innerText = projectDetails[id].name;
   technologies.textContent = '';
@@ -142,19 +141,15 @@ seeProjectArr.forEach((seeProject) => {
       }
     });
 
-    //disable/enable previous project button
-    if (seeProject.id === '1')
-      previous.classList.add('disabled');
-    else
-      previous.classList.remove('disabled');
-  
-    //disable/enable next project button
-    if (seeProject.id === (projectDetails.length).toString())
-      next.classList.add('disabled');
-    else
-      next.classList.remove('disabled');
-  
-    previous.addEventListener('click', navigateProject((seeProject.id)-2));
+    // disable/enable previous project button
+    if (seeProject.id === '1') previous.classList.add('disabled');
+    else previous.classList.remove('disabled');
+
+    // disable/enable next project button
+    if (seeProject.id === (projectDetails.length).toString()) next.classList.add('disabled');
+    else next.classList.remove('disabled');
+
+    previous.addEventListener('click', navigateProject((seeProject.id) - 2));
     next.addEventListener('click', navigateProject(seeProject.id));
-    });
+  });
 });
