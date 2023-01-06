@@ -159,9 +159,7 @@ const form = document.querySelector('form');
 const email = document.querySelector('#email');
 const error = document.querySelector('.error');
 
-const isValidEmail = (email) => {
-  return !/([A-Z])/g.test(email);
-}
+const isValidEmail = (email) => !/([A-Z])/g.test(email);
 
 form.addEventListener('submit', (event) => {
   if (!isValidEmail(email.value)) {
