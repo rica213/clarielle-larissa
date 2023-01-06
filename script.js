@@ -177,9 +177,20 @@ let savedUser = {};
 const userName = document.querySelector('#name');
 const message = document.querySelector('#message');
 
-savedUser.name = userName.value;
-savedUser.email = email.value;
-savedUser.message = message.value;
+const save = () => {
+  savedUser.name = userName.value;
+  savedUser.email = email.value;
+  savedUser.message = message.value;
 
-localStorage.setItem('savedUser', JSON.stringify(savedUser));
-const retrievedUser = JSON.parse(localStorage.getItem('savedUser'));
+  localStorage.setItem('savedUser', JSON.stringify(savedUser));
+}
+
+const retrieve = () => {
+  const retrievedUser = JSON.parse(localStorage.getItem('savedUser'));
+
+  userName.value = retrievedUser.name;
+  email.value = retrievedUser.email;
+  message.value = retrievedUser.message;
+}
+
+form.addEventListener('change',save);
