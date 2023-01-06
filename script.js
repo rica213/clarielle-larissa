@@ -153,3 +153,20 @@ seeProjectArr.forEach((seeProject) => {
     next.addEventListener('click', navigateProject(seeProject.id));
   });
 });
+
+// email validation
+const form = document.querySelector('form');
+const email = document.querySelector('#email');
+const error = document.querySelector('.error');
+
+const isValidEmail = (email) => !/([A-Z])/g.test(email);
+
+form.addEventListener('submit', (event) => {
+  if (!isValidEmail(email.value)) {
+    event.preventDefault();
+    error.innerText = 'The email should be lowercased';
+  } else {
+    error.innerText = '';
+    form.submit();
+  }
+});

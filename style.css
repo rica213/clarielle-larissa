@@ -634,6 +634,12 @@ input[type="checkbox"] {
   border: 1px solid var(--harmonies);
 }
 
+.error {
+  color: red;
+  font-size: 0.75rem;
+  margin-top: 10px;
+}
+
 /* End CSS Get started */
 
 /* Start CSS Contact */
