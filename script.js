@@ -170,3 +170,15 @@ form.addEventListener('submit', (event) => {
     form.submit();
   }
 });
+
+//local storage
+let savedUser = {};
+
+const userName = document.querySelector('#name');
+const message = document.querySelector('#message');
+
+savedUser.name = userName.value;
+savedUser.email = email.value;
+savedUser.message = message.value;
+
+localStorage.setItem('savedUser', JSON.stringify(savedUser));
