@@ -161,23 +161,23 @@ const error = document.querySelector('.error');
 
 const isValidEmail = (email) => !/([A-Z])/g.test(email);
 
-let savedUser = {};
+const savedUser = {};
 
 const userName = document.querySelector('#name');
 
 const save = () => {
   savedUser.name = userName.value;
   savedUser.email = email.value;
-  
+
   localStorage.setItem('savedUser', JSON.stringify(savedUser));
-}
+};
 
 const retrieve = () => {
   const retrievedUser = JSON.parse(localStorage.getItem('savedUser'));
 
   userName.value = retrievedUser.name;
   email.value = retrievedUser.email;
-}
+};
 
 form.addEventListener('submit', (event) => {
   if (!isValidEmail(email.value)) {
