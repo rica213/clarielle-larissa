@@ -182,3 +182,4 @@ savedUser.email = email.value;
 savedUser.message = message.value;
 
 localStorage.setItem('savedUser', JSON.stringify(savedUser));
+const retrievedUser = JSON.parse(localStorage.getItem('savedUser'));
