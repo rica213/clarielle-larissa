@@ -125,7 +125,7 @@ seeProjectArr.forEach((seeProject) => {
 
     // update the project details
     projectDetails.forEach((project) => {
-      if (project.ids === seeProject.id) {
+      if (project.id === seeProject.id) {
         projectName.innerText = project.name;
         technologies.textContent = '';
         project.technologies.forEach((tech) => {
