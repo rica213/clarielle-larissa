@@ -103,7 +103,6 @@ const closeProject = () => {
 };
 
 const navigateProject = (id) => {
-  /* openProject(); */
 
   projectName.innerText = projectDetails[id].name;
   technologies.textContent = '';
@@ -126,7 +125,7 @@ seeProjectArr.forEach((seeProject) => {
 
     // update the project details
     projectDetails.forEach((project) => {
-      if (project.id === seeProject.id) {
+      if (project.ids === seeProject.id) {
         projectName.innerText = project.name;
         technologies.textContent = '';
         project.technologies.forEach((tech) => {
