@@ -154,12 +154,30 @@ seeProjectArr.forEach((seeProject) => {
   });
 });
 
-// email validation
+// email validation local storage
 const form = document.querySelector('form');
 const email = document.querySelector('#email');
 const error = document.querySelector('.error');
 
 const isValidEmail = (email) => !/([A-Z])/g.test(email);
+
+const savedUser = {};
+
+const userName = document.querySelector('#name');
+
+const save = () => {
+  savedUser.name = userName.value;
+  savedUser.email = email.value;
+
+  localStorage.setItem('savedUser', JSON.stringify(savedUser));
+};
+
+const retrieve = () => {
+  const retrievedUser = JSON.parse(localStorage.getItem('savedUser'));
+
+  userName.value = retrievedUser.name;
+  email.value = retrievedUser.email;
+};
 
 form.addEventListener('submit', (event) => {
   if (!isValidEmail(email.value)) {
@@ -168,5 +186,10 @@ form.addEventListener('submit', (event) => {
   } else {
     error.innerText = '';
     form.submit();
+    save();
   }
+});
+
+window.addEventListener('load', () => {
+  retrieve();
 });
