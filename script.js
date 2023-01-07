@@ -154,34 +154,21 @@ seeProjectArr.forEach((seeProject) => {
   });
 });
 
-// email validation
+// email validation local storage
 const form = document.querySelector('form');
 const email = document.querySelector('#email');
 const error = document.querySelector('.error');
 
 const isValidEmail = (email) => !/([A-Z])/g.test(email);
 
-form.addEventListener('submit', (event) => {
-  if (!isValidEmail(email.value)) {
-    event.preventDefault();
-    error.innerText = 'The email should be lowercased';
-  } else {
-    error.innerText = '';
-    form.submit();
-  }
-});
-
-//local storage
 let savedUser = {};
 
 const userName = document.querySelector('#name');
-const message = document.querySelector('#message');
 
 const save = () => {
   savedUser.name = userName.value;
   savedUser.email = email.value;
-  savedUser.message = message.value;
-
+  
   localStorage.setItem('savedUser', JSON.stringify(savedUser));
 }
 
@@ -190,7 +177,19 @@ const retrieve = () => {
 
   userName.value = retrievedUser.name;
   email.value = retrievedUser.email;
-  message.value = retrievedUser.message;
 }
 
-form.addEventListener('change',save);
+form.addEventListener('submit', (event) => {
+  if (!isValidEmail(email.value)) {
+    event.preventDefault();
+    error.innerText = 'The email should be lowercased';
+  } else {
+    error.innerText = '';
+    form.submit();
+    save();
+  }
+});
+
+window.addEventListener('load', () => {
+  retrieve();
+});
