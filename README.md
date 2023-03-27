@@ -97,7 +97,7 @@
 
 - GitHub: [@rica213](https://github.com/rica213)
 - Twitter: [@alc3and](https://twitter.com/alc3and)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/larissa-clarielle-andrainasoa-8768a3256)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/larissa-clarielle/)
 
 > List of collaborators.
 
