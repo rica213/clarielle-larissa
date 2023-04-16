@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>README</b></h3>
+  <h1><b>PORTFOLIO</b></h1>
 
 </div>
 
@@ -18,42 +18,27 @@
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 portfolio <a name="about-project"></a>
 
-
 **portfolio** is a website to show projects and works for everyone to see.
-[Here's a walkthrough video](https://www.loom.com/share/246840fc8755429787c5bda2dc6fa1a7)
+
+Here's a [walkthrough video](https://www.loom.com/share/246840fc8755429787c5bda2dc6fa1a7)
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> We use HTML and CSS to create this website.
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="#">HTML</a></li>
-    <li><a href="#">CSS</a></li>
-  </ul>
-</details>
-<details>
-  <summary>Server</summary>
-</details>
+  - HTML
+  - CSS
 
 <!-- Features -->
 
@@ -72,7 +57,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> https://rica213.github.io/portfolio/
+  This is the link to the [live demo](https://rica213.github.io/portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -80,13 +65,13 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 ## Setup <a name="setup"></a>
-> Clone the repository to your local machine.
+
+Clone the repository to your local machine.
+
 ## Prerequisites <a name="prerequisites"></a>
-> You need an installed browser to run this project.
-## Install <a name="install"></a>
-## Usage <a name="usage"></a>
-## Run tests <a name="run-tests"></a>
-## Deployment <a name="deployment"></a>
+
+You need an installed **browser** to run this project.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
@@ -99,12 +84,11 @@
 - Twitter: [@alc3and](https://twitter.com/alc3and)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/larissa-clarielle/)
 
-> List of collaborators.
+👤 **Collaborators**
 
-👤 **Lawrence**
+👥 **Lawrence**
 
 - GitHub: [@Kwaku28](https://github.com/Kwaku28)
-
 
 👤 **Bright**
 
@@ -118,7 +102,7 @@
 ## 🔭 Future Features <a name="future-features"></a>
 
  <ul>
-    <li>Interaction using JS </li>
+    <li>Interaction using Javascript </li>
   </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -137,7 +121,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> If you like this project, give it a star.
+   If you like this project, give it a star.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -145,20 +129,12 @@ Feel free to check the [issues page](../../issues/).
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> I would like to acknowledge
+I would like to thank:
   - The Microverse team
   - All my reviewers
   - My standup teammates
   - My coding partners
   - My morning session teammates
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ <a name="faq"></a>
-
-> There is no FAQ yet.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
