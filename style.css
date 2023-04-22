@@ -118,18 +118,25 @@ header {
   position: relative;
 }
 
-nav {
+/* nav {
   width: 20px;
   height: 14px;
   margin-right: 16px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-}
+} */
 
 nav ul {
   display: none;
+}
+
+menu {
+  width: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 1rem;
+  cursor: pointer;
 }
 
 .line {
@@ -154,6 +161,7 @@ nav ul {
   position: absolute;
   top: 0;
   left: 0;
+  display: none;
 }
 
 .popup-menu ul {
@@ -162,10 +170,10 @@ nav ul {
   align-items: center;
   justify-content: space-between;
   height: 30%;
-  margin-top: 25.35%;
+  transform: translateY(50%);
 }
 
-.popup-menu ul li {
+.popup-menu li {
   list-style: none;
   cursor: pointer;
 }
@@ -699,21 +707,26 @@ input[type="checkbox"] {
     height: 100px;
   }
 
-  nav {
-    width: 35%;
-    justify-content: center;
+  .popup-menu {
+    display: block;
+    width: 100%;
+    background: none;
+    height: auto;
+    position: static;
   }
 
-  nav ul {
+  .popup-menu ul {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
   }
 
-  nav ul li {
+  .popup-menu li {
     list-style: none;
   }
 
-  nav ul li a {
+  .popup-menu ul li a {
     text-decoration: none;
     font-style: normal;
     font-weight: 400;
@@ -725,11 +738,11 @@ input[type="checkbox"] {
     padding-bottom: 4px;
   }
 
-  nav ul li a:focus {
+  .popup-menu ul li a:focus {
     outline: #1875df;
   }
 
-  nav ul li a:hover::before {
+  .popup-menu ul li a:hover::before {
     position: absolute;
     bottom: 0;
     width: 80%;
@@ -737,7 +750,8 @@ input[type="checkbox"] {
     border-bottom: 2px solid var(--harmonies);
   }
 
-  .line {
+  .line,
+  .close-btn {
     display: none;
   }
 
