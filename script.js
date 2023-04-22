@@ -2,7 +2,6 @@
 // query variables
 const body = document.querySelector('body');
 const menu = document.querySelector('menu');
-const nav = document.querySelector('nav');
 const popupMenu = document.querySelector('.popup-menu');
 const closeBtn = document.querySelector('.close-btn');
 const menuOption = document.querySelector('.popup-menu ul');
@@ -14,7 +13,7 @@ const openMenu = () => {
 };
 
 const closeMenu = () => {
-  popupMenu.style.display = "none";
+  popupMenu.style.display = 'none';
   body.classList.remove('noscroll');
 };
 
@@ -104,7 +103,6 @@ const closeProject = () => {
 };
 
 const navigateProject = (id) => {
-
   projectName.innerText = projectDetails[id].name;
   technologies.textContent = '';
   projectDetails[id].technologies.forEach((tech) => {
@@ -192,7 +190,4 @@ form.addEventListener('submit', (event) => {
 
 window.addEventListener('load', () => {
   retrieve();
-//  // if(window.offsetWidth >= 768) {
-//     nav.classList.remove('hidden')
-//  // }
 });
