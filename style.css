@@ -705,21 +705,26 @@ input[type="checkbox"] {
     height: 100px;
   }
 
-  nav {
-    width: 35%;
-    justify-content: center;
+  .popup-menu {
+    display: block;
+    width: 100%;
+    background: none;
+    height: auto;
+    position: static;
   }
 
-  nav ul {
+  .popup-menu ul {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
   }
 
-  nav ul li {
+  .popup-menu ul li {
     list-style: none;
   }
 
-  nav ul li a {
+  .popup-menu ul li a {
     text-decoration: none;
     font-style: normal;
     font-weight: 400;
@@ -731,11 +736,11 @@ input[type="checkbox"] {
     padding-bottom: 4px;
   }
 
-  nav ul li a:focus {
+  .popup-menu ul li a:focus {
     outline: #1875df;
   }
 
-  nav ul li a:hover::before {
+  .popup-menu ul li a:hover::before {
     position: absolute;
     bottom: 0;
     width: 80%;
@@ -743,7 +748,8 @@ input[type="checkbox"] {
     border-bottom: 2px solid var(--harmonies);
   }
 
-  .line {
+  .line,
+  .close-btn {
     display: none;
   }
 
