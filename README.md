@@ -39,16 +39,15 @@ Here's a [walkthrough video](https://www.loom.com/share/246840fc8755429787c5bda2
 
   - HTML
   - CSS
+  - JAVASCRIPT
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
   <ul>
     <li>Responsive Design</li>
-    <li>Introduction Section</li>   
     <li>Social Media Accounts</li>
     <li>Personal Projects</li>
-    <li>Testimonials</li>
   </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -68,9 +67,14 @@ Here's a [walkthrough video](https://www.loom.com/share/246840fc8755429787c5bda2
 
 Clone the repository to your local machine.
 
+<code>cd new_folder
+git clone git@github.com:rica213/portfolio.git
+</code>
+
 ## Prerequisites <a name="prerequisites"></a>
 
-You need an installed **browser** to run this project.
+- IDE (Integrated Development Environment) to edit the code
+- Browser to run the website
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,7 +106,8 @@ You need an installed **browser** to run this project.
 ## 🔭 Future Features <a name="future-features"></a>
 
  <ul>
-    <li>Interaction using Javascript </li>
+    <li>Add more animation</li>
+    <li>Testimonials</li>
   </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -121,7 +126,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-   If you like this project, give it a star.
+   If you like this project, give it a **star**.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
