@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h1><b>PORTFOLIO</b></h1>
+  <h1><b>📖 PORTFOLIO 📖</b></h1>
 
 </div>
 
@@ -29,7 +29,10 @@
 
 # 📖 portfolio <a name="about-project"></a>
 
-**portfolio** is a website to show projects and works for everyone to see.
+In this project, I implemented a webpage following a design from Figma. <br>
+It is responsive and user-friendly.<br>
+The tech stack I used to build it are HTML/CSS and Vanilla Javascript.<br>
+Several people made contributions towards the development of this project.🤲🏼
 
 Here's a [walkthrough video](https://www.loom.com/share/246840fc8755429787c5bda2dc6fa1a7)
 
@@ -82,21 +85,25 @@ git clone git@github.com:rica213/portfolio.git
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Larissa (Tao)**
+👻 **Larissa (Tao)**
 
 - GitHub: [@rica213](https://github.com/rica213)
 - Twitter: [@alc3and](https://twitter.com/alc3and)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/larissa-clarielle/)
+- LinkedIn: [Larissa Clarielle](https://www.linkedin.com/in/larissa-clarielle/)
 
-👤 **Collaborators**
+👥 **Collaborators**
 
-👥 **Lawrence**
+ 😎 **Lawrence**
 
 - GitHub: [@Kwaku28](https://github.com/Kwaku28)
 
-👤 **Bright**
+ 🧐 **Bright**
 
 - GitHub: [@brightbrain20](https://github.com/brightbrain20)
+
+ 😵‍💫 **Eugene**
+
+- Github: [@Eugeneiyukhun](https://github.com/Eugeneiyukhun)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
