@@ -11,10 +11,10 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
+- [🛠 Built With](#built-with)
+  - [Tech Stack](#tech-stack)
+- [🪄 Key Features](#key-features)
+- [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -35,6 +35,9 @@ The tech stack I used to build it are HTML/CSS and Vanilla Javascript.<br>
 Several people made contributions towards the development of this project.🤲🏼
 
 Here's a [walkthrough video](https://www.loom.com/share/246840fc8755429787c5bda2dc6fa1a7)
+
+[Screencast Larissa_Portfolio.webm](https://github.com/rica213/portfolio/assets/10439283/78deb1a0-3320-45ff-b0db-d5944dcc092e)
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -133,7 +136,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-   If you like this project, give it a **star**.
+   If you like this project, kindly 🙏🏽 give it a 🌟 **star**🌟.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
