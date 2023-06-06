@@ -118,14 +118,6 @@ header {
   position: relative;
 }
 
-/* nav {
-  width: 20px;
-  height: 14px;
-  margin-right: 16px;
-  display: flex;
-  flex-direction: column;
-} */
-
 nav ul {
   display: none;
 }
