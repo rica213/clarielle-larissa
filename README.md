@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h1><b>📖 PORTFOLIO 📖</b></h1>
+  <h1><b>👽 CLARIELLE LARISSA ANDRAINASOA 🦄</b></h1>
 
 </div>
 
@@ -136,7 +136,15 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-   If you like this project, kindly 🙏🏽 give it a 🌟 **star**🌟.
+Your support is crucial to the success of this project! There are ways you can contribute and show your support:
+
+- Provide Feedback: If you've tried out the project or have any suggestions for improvement, we would love to hear from you. Your feedback is invaluable in shaping the future direction of the project.
+
+- Give a 🌟**star**🌟 if you like this project!
+
+Remember, your support matters! Whether it's spreading the word, providing feedback, reporting issues, contributing code, or making a donation, every action makes a difference. Together, we can make this project even better.
+
+Thank you for your support and for being a part of this journey!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
