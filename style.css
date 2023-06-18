@@ -266,7 +266,7 @@ menu {
 }
 
 .one {
-  background-image: url(img/mobile/one.png);
+  background-image: url(img/mobile/save_sense.png);
 }
 
 .two {
@@ -863,12 +863,13 @@ input[type="checkbox"] {
 
   .one-desktop {
     display: block;
-    background-image: url(img/desktop/one.svg);
+    background-image: url(img/mobile/save_sense.png);
     position: absolute;
     top: 0;
     right: 0;
     height: 558px;
     width: 67.71%;
+    background-size: cover;
   }
 
   .project__item_one .project__name {
