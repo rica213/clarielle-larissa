@@ -47,6 +47,10 @@ body {
   scroll-behavior: smooth;
 }
 
+main {
+  padding-top: 100px;
+}
+
 .noscroll {
   overflow: hidden;
 }
@@ -125,7 +129,8 @@ header {
   width: 100%;
   background-image: url(img/mobile/top_left.svg);
   background-repeat: no-repeat;
-  position: relative;
+  position: fixed;
+  z-index: 500;
 }
 
 nav ul {
