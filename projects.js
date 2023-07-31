@@ -2,10 +2,6 @@
 const projectContainer = document.querySelector('.project-container');
 const projectWindow = document.querySelector('.project-popup');
 const closeProjectBtn = document.querySelector('.close-project');
-const previous = document.querySelector(
-  '.project_details__navigation_link-previous',
-);
-const next = document.querySelector('.project_details__navigation_link-next');
 const projectName = document.querySelector('.project-details__name');
 const technologies = document.querySelector('.project-details__technologies');
 const featuredImage = document.querySelector('.project-details__featured-img');
@@ -138,22 +134,6 @@ const closeProject = () => {
   projectContainer.style.filter = 'blur(0px)';
 };
 
-const navigateProject = (id) => {
-  if (id >= 0 && id < projectDetails.length) {
-    projectName.innerText = projectDetails[id].name;
-    technologies.textContent = '';
-    projectDetails[id].technologies.forEach((tech) => {
-      const techList = document.createElement('li');
-      techList.innerText = tech;
-      technologies.appendChild(techList);
-    });
-    featuredImage.src = projectDetails[id].featuredImage;
-    description.innerText = projectDetails[id].description;
-    live.href = projectDetails[id].live;
-    source.href = projectDetails[id].source;
-  }
-};
-
 closeProjectBtn.addEventListener('click', closeProject);
 
 // open project details
@@ -175,26 +155,6 @@ projectContainer.addEventListener('click', (event) => {
         live.href = project.live;
         source.href = project.source;
       }
-    });
-
-    // disable/enable previous project button
-    if (event.target.id === '1') previous.classList.add('disabled');
-    else previous.classList.remove('disabled');
-
-    // disable/enable next project button
-    if (event.target.id === projectDetails.length.toString()) next.classList.add('disabled');
-    else next.classList.remove('disabled');
-
-    // navigate to previous project
-    previous.addEventListener('click', () => {
-      const previousProject = parseInt(event.target.id, 10) - 2;
-      navigateProject(previousProject);
-    });
-
-    // navigate to next project
-    next.addEventListener('click', () => {
-      const nextProject = parseInt(event.target.id, 10);
-      navigateProject(nextProject);
     });
   }
 });
