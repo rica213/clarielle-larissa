@@ -284,7 +284,7 @@ menu {
 }
 
 .project__preview {
-  height: 35dvh;
+  height: 35vh;
   background-size: cover;
   background-position: center;
 }
@@ -613,9 +613,9 @@ form {
   left: 17px;
 }
 
-input[type="checkbox"]:checked~.placeholder.name,
-#name:focus~.placeholder.name,
-#name:not(:focus):valid~.placeholder.name {
+input[type="checkbox"]:checked ~ .placeholder.name,
+#name:focus ~ .placeholder.name,
+#name:not(:focus):valid ~ .placeholder.name {
   position: absolute;
   top: 4px;
   left: 16px;
@@ -623,9 +623,9 @@ input[type="checkbox"]:checked~.placeholder.name,
   font-size: 0.65rem;
 }
 
-input[type="checkbox"]:checked~.placeholder.email,
-#email:focus~.placeholder.email,
-#email:not(:focus):valid~.placeholder.email {
+input[type="checkbox"]:checked ~ .placeholder.email,
+#email:focus ~ .placeholder.email,
+#email:not(:focus):valid ~ .placeholder.email {
   position: absolute;
   top: 68px;
   left: 16px;
@@ -688,7 +688,7 @@ input[type="checkbox"] {
   display: none;
 }
 
-#contact .contact__resume .get-resume-desktop~img {
+#contact .contact__resume .get-resume-desktop ~ img {
   display: none;
 }
 
@@ -697,7 +697,7 @@ input[type="checkbox"] {
   justify-content: space-around;
 }
 
-.fab {
+.contact__social-media .fab {
   font-size: 1.5rem;
   color: var(--white);
 }
@@ -829,7 +829,7 @@ input[type="checkbox"] {
   }
 
   /* Add gaps on the projects in the second row */
-  .project-container> :nth-child(n+3) {
+  .project-container > :nth-child(n+3) {
     padding: 0.5rem 0.25rem 0 0.25rem;
   }
 
@@ -1008,7 +1008,7 @@ input[type="checkbox"] {
     margin-bottom: 40px;
   }
 
-  #get-started .section__title+.section__desc {
+  #get-started .section__title + .section__desc {
     margin-bottom: 60px;
   }
 
@@ -1040,9 +1040,9 @@ input[type="checkbox"] {
     font-size: 0.75rem;
   }
 
-  input[type="checkbox"]:checked~.placeholder.name,
-  #name:focus~.placeholder.name,
-  #name:not(:focus):valid~.placeholder.name {
+  input[type="checkbox"]:checked ~ .placeholder.name,
+  #name:focus ~ .placeholder.name,
+  #name:not(:focus):valid ~ .placeholder.name {
     position: absolute;
     top: -20px;
     font-size: 0.8rem;
@@ -1056,9 +1056,9 @@ input[type="checkbox"] {
     font-size: 0.75rem;
   }
 
-  input[type="checkbox"]:checked~.placeholder.email,
-  #email:focus~.placeholder.email,
-  #email:not(:focus):valid~.placeholder.email {
+  input[type="checkbox"]:checked ~ .placeholder.email,
+  #email:focus ~ .placeholder.email,
+  #email:not(:focus):valid ~ .placeholder.email {
     position: absolute;
     top: -20px;
     left: 52%;
@@ -1066,7 +1066,7 @@ input[type="checkbox"] {
     font-weight: 500;
   }
 
-  #get-started form>input[type="submit"].connect {
+  #get-started form > input[type="submit"].connect {
     width: 50%;
     margin-bottom: 42px;
     font-family: "Poppins", sans-serif;
@@ -1092,7 +1092,7 @@ input[type="checkbox"] {
   }
 
   /* stylelint-disable-next-line no-descending-specificity */
-  #contact .contact__resume .get-resume-mobile+img {
+  #contact .contact__resume .get-resume-mobile + img {
     display: none;
   }
 
@@ -1103,7 +1103,7 @@ input[type="checkbox"] {
   }
 
   /* stylelint-disable-next-line no-descending-specificity */
-  #contact .contact__resume .get-resume-desktop~img {
+  #contact .contact__resume .get-resume-desktop ~ img {
     display: inline;
   }
 

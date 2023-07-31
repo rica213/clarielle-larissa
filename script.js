@@ -62,11 +62,12 @@ window.addEventListener('load', () => {
 });
 
 // Download Resume //
-function downloadResume() {
+/* eslint-disable-next-line no-unused-vars */
+const downloadResume = () => {
   const link = document.createElement('a');
-  link.href = "https://drive.google.com/uc?export=download&id=138xKvAXNeFHdG3M3P7d9Nu90YYp-uOHS";
-  link.download = "Clarielle_Larissa_Resume.pdf";
+  link.href = 'https://drive.google.com/uc?export=download&id=138xKvAXNeFHdG3M3P7d9Nu90YYp-uOHS';
+  link.download = 'Clarielle_Larissa_Resume.pdf';
 
   // Trigger the download by programmatically clicking the link
   link.dispatchEvent(new MouseEvent('click'));
-}                               
+};
