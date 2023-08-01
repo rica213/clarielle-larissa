@@ -78,7 +78,7 @@ window.addEventListener('load', () => {
 /* eslint-disable-next-line no-unused-vars */
 const downloadResume = () => {
   const link = document.createElement('a');
-  link.href = 'https://drive.google.com/uc?export=download&id=138xKvAXNeFHdG3M3P7d9Nu90YYp-uOHS';
+  link.href = 'https://drive.google.com/file/d/1yMDBEM65CPYOlXM-E0cIvNHOyFOkOkB9/view?usp=sharing';
   link.download = 'Clarielle_Larissa_Resume.pdf';
 
   // Trigger the download by programmatically clicking the link
