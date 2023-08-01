@@ -241,6 +241,7 @@ menu {
 .headline__social-media .fab {
   color: var(--harmonies);
   font-size: 1.25rem;
+  padding: 0.25rem;
 }
 
 @media screen and (min-width: 465px) and (max-width: 768px) {
