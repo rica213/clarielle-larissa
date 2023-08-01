@@ -510,7 +510,7 @@ menu {
   width: 100%;
   margin: 0 auto;
   padding: 0 16px;
-  grid-template-rows: repeat(3, 289px);
+  grid-template-rows: repeat(3, minmax(289px, auto));
   row-gap: 16px;
   color: var(--white);
 }
