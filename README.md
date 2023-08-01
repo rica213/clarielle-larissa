@@ -62,7 +62,7 @@ Here's a [walkthrough video](https://www.loom.com/share/246840fc8755429787c5bda2
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-  This is the link to the [live demo](https://rica213.github.io/portfolio/)
+  This is the link to the [live demo](https://rica213.github.io/clarielle-larissa/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
