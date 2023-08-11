@@ -16,7 +16,7 @@ const projectDetails = [
     name: 'VR-WORLD',
     description:
       'VR-WORLD is a cutting-edge platform that connects you with a curated selection of virtual reality studios and experiences. Our mission is to provide a seamless booking process for thrilling VR sessions, putting the power of choice in your hands.',
-    featuredImage: 'assets/images/vr-world-landing.png',
+    featuredImage: 'assets/images/vr-world.png',
     technologies: [
       'Ruby on Rails',
       'React',
@@ -32,7 +32,7 @@ const projectDetails = [
     name: 'Save Sense',
     description:
       'Save Sense is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
-    featuredImage: 'assets/images/save-sense-dark.png',
+    featuredImage: 'assets/images/save_sense.png',
     technologies: ['ruby on rails', 'postgresql', 'javascript', 'html/css'],
     live: 'https://save-sense.onrender.com/',
     source: 'https://github.com/rica213/Save-sense',
