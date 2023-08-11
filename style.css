@@ -75,7 +75,6 @@ main {
   line-height: 1em;
   text-align: left;
   color: var(--harmonies);
-  padding: 30px 16px 0 16px;
 }
 
 .section__desc {
@@ -219,7 +218,7 @@ menu {
 }
 
 #headline .section__title {
-  padding: 30px 16px 0 16px;
+  padding: 1.875rem 1rem 0 1rem;
 }
 
 #headline .section__desc {
@@ -228,6 +227,8 @@ menu {
 
 .usp {
   font-weight: 500;
+  font-size: 1.5rem;
+  padding: 0.25rem 1rem;
 }
 
 #headline .connect {
