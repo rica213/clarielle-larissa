@@ -41,6 +41,17 @@ html {
   }
 }
 
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 body {
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
@@ -219,6 +230,7 @@ menu {
 
 #headline .section__title {
   padding: 1.875rem 1rem 0 1rem;
+  animation: bounce 2s infinite;
 }
 
 #headline .section__desc {
